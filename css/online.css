@@ -1,0 +1,98 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.online-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(../images/online/bg.png) no-repeat center #fedf0a;
+    background-size: contain;
+}
+.line-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 374px;
+    margin: -200px 0 0 -300px;
+    padding-top: 26px;
+    font-family: "SimHei";
+}
+.line-center span {
+    display: block;
+    text-align: center;
+}
+.line-logo {
+    width: 112px;
+    height: 120px;
+    background: url(../images/online/logo.png) no-repeat;
+    background-size: contain;
+    margin: 0 auto 24px;
+}
+.line-t {
+    width: 600px;
+    height: 210px;
+    background: url(../images/online/txt.png) no-repeat 14px center;
+    background-size: contain;
+}
+
+.line-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -600px 0 0 -600px; 
+    width: 1200px;
+    height: 1200px;  
+    -webkit-transform: rotate(0deg); 
+    -moz-transform: rotate(0deg); 
+    -ms-transform: rotate(0deg); 
+    transform: rotate(0deg); 
+    -webkit-animation: turn 16s linear infinite;
+    -moz-animation: turn 16s linear infinite;
+    -ms-animation: turn 16s linear infinite;
+    animation: turn 16s linear infinite;
+}
+.line-pro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -600px 0 0 -600px; 
+    width: 1200px;
+    height: 1200px;
+    background: url(../images/online/pro.png) center no-repeat;
+    background-size: contain;
+}
+@-webkit-keyframes turn {
+    to{
+        -webkit-transform: rotate(360deg); 
+        -moz-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+        transform: rotate(360deg); 
+    }
+}
+@-moz-keyframes turn {
+    to{
+        -webkit-transform: rotate(360deg); 
+        -moz-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+        transform: rotate(360deg); 
+    }
+}
+@-ms-keyframes turn {
+    to{
+        -webkit-transform: rotate(360deg); 
+        -moz-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+        transform: rotate(360deg); 
+    }
+}
+@keyframes turn {
+    to{
+        -webkit-transform: rotate(360deg); 
+        -moz-transform: rotate(360deg); 
+        -ms-transform: rotate(360deg); 
+        transform: rotate(360deg); 
+    }
+}

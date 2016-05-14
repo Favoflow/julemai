@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/com/reset.css">
+    <link rel="stylesheet" href="../css/online.css">
+</head>
+<body>
+    <div class="online-bg">
+        <div class="line-center">
+            <span class="line-logo"></span>   
+            <span class="line-t"></span>   
+        </div>
+        <div class="line-circle"><div class="line-pro"></div></div>
+    </div> 
+<script src="../js/com/jquery-1.8.3.min.js"></script>  
+<script>
+
+function getScale(){
+    var _h = $(document.body).height(),
+        _sca = _h/1200;
+    $('.line-center,.line-pro').css({
+        '-webkit-transform': 'scale('+_sca+','+_sca+')',
+        '-moz-transform': 'scale('+_sca+','+_sca+')',
+        '-ms-transform': 'scale('+_sca+','+_sca+')',
+        'transform': 'scale('+_sca+','+_sca+')'
+    });
+    $('.online-bg').css('background-size', 'auto '+_h+'px');
+}
+$(function(){
+    getScale();
+    window.addEventListener('resize',function(){
+        getScale();
+    });
+})
+</script>     
+</body>
+</html>

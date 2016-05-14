@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/* 帖子回复-S */
+.post-box {
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative; }
+  .post-box .arrow {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    top: -22px;
+    left: 30px;
+    border-top-width: 0;
+    border-bottom-color: #f8f8f8;
+    border-width: 11px; }
+  .post-box .title {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px; }
+  .post-box .new-comment-edit textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 12px; }
+    .post-box .new-comment-edit textarea:hover, .post-box .new-comment-edit textarea:focus {
+      border: 1px solid #e3e3e3;
+      box-shadow: none; }
+  .post-box textarea::-moz-placeholder {
+    color: #ccc; }
+  .post-box textarea:-ms-input-placeholder {
+    color: #ccc; }
+  .post-box textarea::-webkit-input-placeholder {
+    color: #ccc; }
+  .post-box .add-controls a {
+    text-decoration: none; }
+  .post-box .add-controls .fa-smile-o {
+    font-size: 20px;
+    color: #999;
+    padding-right: 5px;
+    line-height: 35px;
+    vertical-align: middle; }
+  .post-box .add-controls .text {
+    display: inline-block;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #666;
+    line-height: 35px;
+    vertical-align: middle; }
+  .post-box .add-controls .btn-submit {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    padding: 6px 20px; }
+
+/* 帖子回复-E */
+/*提问-S*/
+.collapse-ask .well {
+  border-radius: 0;
+  border: 1px #e3e3e3 solid;
+  background: #f8f8f8;
+  box-shadow: none;
+  position: relative; }
+  .collapse-ask .well .close {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    height: 30px;
+    width: 30px;
+    background: #333;
+    text-align: center;
+    opacity: .4;
+    font-size: 0;
+    z-index: 100; }
+    .collapse-ask .well .close:hover {
+      background: #e84a39;
+      opacity: 1; }
+  .collapse-ask .well .form-control {
+    border: 1px #e3e3e3 solid;
+    box-shadow: none;
+    font-size: 12px; }
+    .collapse-ask .well .form-control::-moz-placeholder {
+      color: #e3e3e3; }
+    .collapse-ask .well .form-control::-webkit-input-placeholder {
+      color: #e3e3e3; }
+    .collapse-ask .well .form-control:-ms-input-placeholder {
+      color: #e3e3e3; }
+  .collapse-ask .well .select {
+    position: relative;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px; }
+    .collapse-ask .well .select .caret {
+      position: absolute;
+      top: 15px;
+      right: 10px; }
+    .collapse-ask .well .select select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      border: none;
+      margin-right: -60px; }
+  .collapse-ask .well .btn-success {
+    border: 1px dashed #e3e3e3;
+    background: #f8f8f8;
+    color: #666;
+    text-shadow: none;
+    box-shadow: none; }
+    .collapse-ask .well .btn-success:hover, .collapse-ask .well .btn-success:focus {
+      box-shadow: none; }
+    .collapse-ask .well .btn-success .fa-picture-o {
+      color: #999; }
+
+/*提问-E*/
+/*提问折叠框-S*/
+.modal-ask {
+  border-radius: 0;
+  border: 1px #e3e3e3 solid;
+  box-shadow: none;
+  position: relative; }
+  .modal-ask .close {
+    position: absolute;
+    top: -1px;
+    right: -41px;
+    height: 40px;
+    width: 40px;
+    background: #ccc;
+    text-align: center;
+    opacity: 1;
+    font-size: 0;
+    z-index: 1000; }
+    .modal-ask .close:hover {
+      background: #colorRed; }
+  .modal-ask .form-control {
+    border: 1px #e3e3e3 solid;
+    box-shadow: none; }
+    .modal-ask .form-control::-moz-placeholder {
+      color: #e3e3e3;
+      font-size: 12px; }
+    .modal-ask .form-control::-webkit-input-placeholder {
+      color: #e3e3e3;
+      font-size: 12px; }
+    .modal-ask .form-control:-ms-input-placeholder {
+      color: #e3e3e3;
+      font-size: 12px; }
+  .modal-ask .select {
+    position: relative;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px; }
+    .modal-ask .select .caret {
+      position: absolute;
+      top: 15px;
+      right: 10px; }
+    .modal-ask .select select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      border: none;
+      margin-right: -60px; }
+  .modal-ask .btn-success {
+    border: 1px dashed #e3e3e3;
+    background: #fff;
+    color: #666;
+    text-shadow: none;
+    box-shadow: none; }
+    .modal-ask .btn-success:hover, .modal-ask .btn-success:focus {
+      box-shadow: none; }
+    .modal-ask .btn-success .fa-picture-o {
+      color: #999; }
+
+/*提问折叠框-E*/
+/* 创建日志-S */
+.modal-show {
+  border-radius: 0;
+  padding: 0 15px;
+  box-shadow: none;
+  border: 1px solid #e3e3e3;
+  position: relative; }
+  .modal-show .close {
+    background: #ccc none repeat scroll 0 0;
+    font-size: 0;
+    height: 40px;
+    opacity: 1;
+    position: absolute;
+    right: -41px;
+    text-align: center;
+    top: -1px;
+    width: 40px;
+    z-index: 1000; }
+    .modal-show .close:hover {
+      background: #e84a39; }
+  .modal-show .modal-header {
+    border-bottom: 0; }
+  .modal-show .form-group .form-group {
+    margin-bottom: 20px; }
+  .modal-show .form-group label {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    color: #333;
+    font-weight: 100;
+    line-height: 40px; }
+  .modal-show .form-group .form-control {
+    height: 40px;
+    border: 1px solid #e3e3e3;
+    box-shadow: none; }
+  .modal-show .form-group .select-box {
+    margin-right: 10px;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    width: 115px;
+    height: 40px; }
+    .modal-show .form-group .select-box:after {
+      top: 20px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: #666 transparent transparent transparent;
+      border-width: 5px;
+      font-size: 0;
+      position: absolute;
+      right: 20px; }
+    .modal-show .form-group .select-box select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      padding: 6px 12px;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: transparent; }
+  .modal-show .form-group .btn-success {
+    border: 1px dashed #e3e3e3;
+    background: #f8f8f8;
+    color: #666;
+    text-shadow: none;
+    box-shadow: none; }
+    .modal-show .form-group .btn-success .fa-picture-o {
+      color: #999; }
+  .modal-show .form-group .btn-style, .modal-show .form-group .btn-red {
+    margin: 5px; }
+  .modal-show .form-group .company {
+    line-height: 40px;
+    color: #999; }
+
+/* 创建日志-E */
+
+/*# sourceMappingURL=post.css.map */
