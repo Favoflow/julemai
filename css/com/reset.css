@@ -18,6 +18,9 @@ a {
   text-decoration:none;
   cursor: pointer;
 }
+a:hover { text-decoration: none!important;}
+a:visited { text-decoration: none!important;}
+a:link { text-decoration: none!important;}
 img { 
   border: none; 
   vertical-align: top;
@@ -41,7 +44,7 @@ body,a {
   font-size: 14px;
   color: #414141;
   overflow-x: hidden;
-  background: #fff;
+  background: none;
 }
 [placeholder] { 
   font-family: "Hiragino Sans GB","Microsoft YaHei","微软雅黑",tahoma,arial,"宋体";

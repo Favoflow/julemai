@@ -4,74 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>聚乐买-首页</title>
-<!--    com-s-->
-    <link rel="stylesheet" href="../css/com/reset.css">
-    <script src="../js/com/jquery-1.12.3.min.js"></script>
-<!--    com-e-->
     
+    <script src="../js/com/jquery-1.12.3.min.js"></script>
 <!--    bootstrap--s-->
     <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
     <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>    
 <!--    bootstrap--e-->
+
+<!--    com-s-->
+    <link rel="stylesheet" href="../css/com/reset.css">
+    <link rel="stylesheet" href="../css/com/com.css">
+    <link rel="stylesheet" href="../css/com/nav.css">
+<!--    com-e-->
+<!--   font-s-->
+    <link rel="stylesheet" href="../plugins/bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+<!--   font-e-->
     
     <link rel="stylesheet" href="../css/user_index.css">
+    <script src="../js/user_index.js"></script>
 </head>
 <body>
 <header>
-    <nav class="navbar nav-top">
-        <div class="container">
-            <a href="#" class="navbar-left">聚乐买首页</a>
-            <div class="navbar-right">
-                
-<!--                正常显示-->
-                <ul class="nav navbar-nav hidden-xs">
-                    <li><a href="#">登录</a></li>
-                    <li><a href="#">注册</a></li>
-                    <li><a href="#">我的订单</a></li>
-                    <li><a href="#">我的收藏</a></li>
-                    <li><a href="#">联系客服</a></li>
+<!--    顶部导航-->
+    <div class="nav-top">
+        <div class="nav-topMain clearfix">
+            <a class="nav-topLeft" href="#">聚乐买首页</a>
+            <ul class="nav-topRight">
+                <li class="log">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </li>
+                <li><a href="#"><i class="iconfont icon-list"></i>我的订单</a></li>
+                <li><a href="#"><i class="iconfont icon-shoucangp"></i>我的收藏</a></li>
+                <li><a href="#"><i class="iconfont icon-kefu"></i>联系客服</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<!--    导航-->
+    <nav class="navbar-main">
+        <div class="navbar navbar-container">
+            <div class="navbar-left">
+                <a class="logo" href="#"><img src="../images/com/logo.png" alt="logo"></a>
+                <ul class="navleft-list">
+                    <li class="nav-cur"><a href="#">首页</a></li>
+                    <li><a href="#">最后疯抢</a></li>
                 </ul>
-                
-<!--                手机上显示-->
-                <div class="dropdown pull-right visible-xs">
-                    <siv class="navbar navbar-default" role="navigation">
-                       <div class="navbar-header">
-                          <button type="button" class="navbar-toggle" data-toggle="collapse" 
-                             data-target="#example-navbar-collapse">
-                             <span class="sr-only">切换导航</span>
-                             <span class="icon-bar"></span>
-                             <span class="icon-bar"></span>
-                             <span class="icon-bar"></span>
-                          </button>
-                          <a class="navbar-brand" href="#">W3Cschool</a>
-                       </div>
-                       <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                          <ul class="nav navbar-nav">
-                             <li class="active"><a href="#">iOS</a></li>
-                             <li><a href="#">SVN</a></li>
-                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                   Java <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                   <li><a href="#">jmeter</a></li>
-                                   <li><a href="#">EJB</a></li>
-                                   <li><a href="#">Jasper Report</a></li>
-                                   <li class="divider"></li>
-                                   <li><a href="#">分离的链接</a></li>
-                                   <li class="divider"></li>
-                                   <li><a href="#">另一个分离的链接</a></li>
-                                </ul>
-                             </li>
-                          </ul>
-                       </div>
+            </div> 
+            
+            <div class="navbar-right">
+                <ul class="navright-list clearfix">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-clock-o"></i>
+                            <span>限时限量抢</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-truck"></i>
+                            <span>全场包邮</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-shopping-bag"></i>
+                            <span>最低售价</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-shangjia"></i>
+                            <span>商家报名</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>  
+        </div>     
+    </nav>
+</header>
+
+
+<div class="banner">
+    <div class="container clearfix">
+        <div class="banner-left">
+            <a href="#"><img src="" alt=""></a>
+            <a href="#"><img src="" alt=""></a>
+        </div>
+
+        <!--   轮播-->
+        <div id="myCarousel" class="carousel slide banner-main">
+           <!-- 轮播（Carousel）指标 -->
+           <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+           </ol>   
+           <!-- 轮播（Carousel）项目 -->
+           <div class="carousel-inner">
+              <div class="item active">
+                 <img src="" alt="First slide">
+              </div>
+              <div class="item">
+                 <img src="" alt="Second slide">
+              </div>
+              <div class="item">
+                 <img src="" alt="Third slide">
+              </div>
+           </div>
+           <!-- 轮播（Carousel）导航 -->
+           <a class="fa fa-angle-left banner-to-left" href="#myCarousel" 
+              data-slide="prev"></a>
+           <a class="fa fa-angle-right banner-to-right" href="#myCarousel" 
+              data-slide="next"></a>
+        </div>         
+
+        <div class="aside-nav">
+            <div class="j_vipCon vip-con" style="display: block;">
+                <div data-spm="2016070">
+                    <div class="avatar-con">
+                        <div class="avatar-default">
+                        </div>
                     </div>
-                    
-                    
+                    <div class="login-info">
+                        <div>Hi~你好!</div>
+                        <a target="_self" href="//login.tmall.com/" class="login-button"><i class="iconfont icon-yonghu"></i>请登录</a>
+                        <a class="register" href="//register.tmall.com/">免费注册 &gt;</a>
+                    </div>
+                    <div class="seprate"></div>
+                    <div class="more-info-con">
+
+                        <div class="more-info">
+                            <ul>
+                                <li><i class="iconfont icon-shangjia"></i><span>诚信商家</span></li>
+                                <li><i class="iconfont icon-zhiliangbaoz"></i><span>质量保证</span></li>
+                                <li><i class="iconfont icon-shandianfahuo"></i><span>极速退款</span></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="recommends-con">
+                        <div class="con-title">今日推荐</div>
+
+                        <a href="#">
+                            <img class="pic" src="">
+                            <div class="title">便携水杯</div>
+                            <a href="#" class="sub-title">立即抢购</a>
+                        </a>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-</header>
+    </div>
+</div>
+
+<div class="timebar container">
+    <ul class="clearfix">
+        <li class="timebar-type1 active">
+            <a href="javascript:;">
+                <span>昨日上新</span>
+                <i class="timebar-line"></i>
+            </a>
+        </li>
+        <li class="timebar-type2">
+            <a href="javascript:;">
+                <p>
+                    <span>10:00</span>
+                    <em>已开抢</em>
+                </p>
+                <i class="timebar-line"></i>
+            </a>
+        </li>
+        <li class="timebar-type2">
+            <a href="javascript:;">
+                <p>
+                    <span>10:00</span>
+                    <em>抢购中</em>
+                </p>
+                <i class="timebar-line"></i>
+            </a>
+        </li>
+        <li class="timebar-type2">
+            <a href="javascript:;">
+                <p>
+                    <span>10:00</span>
+                    <em>即将开抢</em>
+                </p>
+                <i class="timebar-line"></i>
+            </a>
+        </li>
+        <li class="timebar-type1">
+            <a href="javascript:;">
+            <span>明日上新</span>
+            </a>
+        </li>
+    </ul>
+    <div class="timebar-active"><i></i></div>
+</div>
+
+<!--限量抢购商品区-->
+<div class="container">
+    <div class="mrl-tit clearfix">
+        <h4>限时限量 低价疯抢</h4>
+        <dl>
+            <dt>距离结束还有：</dt>
+            <dd>01</dd>
+            <i>:</i>
+            <dd>56</dd>
+            <i>:</i>
+            <dd>28</dd>
+        </dl>
+    </div>
+    
+    <div class="mrl-main">
+        <ul class="mrl-pro row">
+            <li class="col-xs-12 col-sm-6"> 
+                <a class="mrl-pic" href="javascript:;"><img src="" alt=""></a>
+                <div class="mrl-info">
+                    <h4><i></i>夏季爆款</h4>
+                    <p>抢购价￥30.00</p>
+                    <p>
+                        <span>到手价￥<i>6</i>.00</span>
+                        <span><i>返</i>80%</span>
+                    </p>
+                    <p>
+                        <span>已抢购</span>
+                        <span>仅剩18件</span>
+                    </p>
+                    <div class="process"><i class="percent"></i></div>
+                </div>
+            </li>
+            
+            <li class="col-xs-12 col-sm-6"> 
+                <a class="mrl-pic" href="javascript:;"><img src="" alt=""></a>
+                <div class="mrl-info">
+                    <h4><i></i>夏季爆款</h4>
+                    <p>抢购价￥30.00</p>
+                    <p>
+                        <span>到手价￥<i>6</i>.00</span>
+                        <span><i>返</i>80%</span>
+                    </p>
+                    <p>
+                        <span>已抢购</span>
+                        <span>仅剩18件</span>
+                    </p>
+                    <div class="process"><i class="percent"></i></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>
