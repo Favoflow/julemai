@@ -1,4 +1,18 @@
-var com = {
+var base = {
+//    获取位置
+    getPos:function(obj){
+        var t=0,
+            l=0;
+        while(obj){
+            t+=obj.offsetTop;
+            l+=obj.offsetLeft;
+            obj=obj.offsetParent;
+        }
+        return {
+            t:t,
+            l:l
+        };
+    },
 //    收藏
     doColl:function(_this){
         if(_this.hasClass('uncollect')){
@@ -13,13 +27,14 @@ var com = {
         $('html,body').animate({'scrollTop':'0'},300);
     }
 }
+
 $(function(){
     var con = $('body');
     con.on('click','.collect',function(){
-        com.doColl($(this));
+        base.doColl($(this));
     });
     
     con.on('click','.to-top',function(){
-        com.toTop();
+        base.toTop();
     })
 })

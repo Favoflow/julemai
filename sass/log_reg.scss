@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import "base";
+
+//动画
+@include keyframes(cloudMove){
+    0%{
+        @include transform(translate3d(0,0,0));
+    }50%{
+        @include transform(translate3d(40px,-10px,0)); 
+    }100%{
+        @include transform(translate3d(0,0,0));  
+    }
+}
+
+@include keyframes(wave){
+    0%{
+        @include transform(translate3d(0,0,0));    
+    }50%{
+        @include transform(translate3d(-25%,0,0));    
+    }100%{
+        @include transform(translate3d(0,0,0));    
+    }
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 172px;
+    background: #ffe100;
+}
+
+//云
+.cloud {
+    position: absolute;
+    width: 9vw;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include animate(12s linear cloudMove infinite);
+}
+.cloud-1 { 
+    left: 6vw;
+    top: 14vh;
+    background-size: 5vw;
+    background-image: url(../images/reglog/cloud1.png);
+}
+.cloud-2 { 
+    left: 13vw;
+    top: 6vh;
+    background-size: 7vw;
+    background-image: url(../images/reglog/cloud2.png);
+}
+.cloud-3 { 
+    right: 16vw;
+    top: 4vh;
+    background-size: 7vw;
+    background-image: url(../images/reglog/cloud3.png);
+}
+.cloud-4 { 
+    right: 5vw;
+    top: 12vh;
+    background-size: 9vw;
+    background-image: url(../images/reglog/cloud4.png);
+}
+
+//底部
+.mini-foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 172px;
+    background: #fff;
+    text-align: center;
+}
+.mini-foot-list { margin-top: 60px;}
+.mini-foot-list li { display: inline-block;}
+.mini-foot-list li a {
+    display: block;
+    width: 102px;
+    height: 12px;
+    text-align: center;
+    border-right: $border;
+    color: #666;
+    font-size: 12px;
+    line-height: 12px;
+}
+.mini-foot-list li:last-child a { border-right: none;}
+.mini-foot .foot-copy {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+//波浪
+.wave {
+    position: absolute;
+    bottom: 170px;
+    left: 0;
+    width: 200%;
+    height: 0;
+    padding-top: 7.5%;
+    background: url(../images/reglog/wave.png) repeat-x;
+    background-size: 50%;
+    @include animate(40s linear wave infinite);
+}
+
+
+//注册方式
+.reg-way {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 616px;
+    height: 205px;
+    margin: -102px 0 0 -308px;
+    z-index: 100;
+}
+
+.reg-way .reg-user,.reg-way .reg-seller {
+    width: 205px;
+    height: 205px;
+    background: #fff;
+    @include borderRadius(50%);
+}
+.reg-way .reg-user { float: left;}
+.reg-way .reg-seller { float: right;}
+.reg-way .circle {
+    position: relative;
+    display: block;
+    width: 185px;
+    height: 185px;
+    margin: 10px auto;
+    border: 1px dotted #ffe100;
+    text-align: center;
+    @include borderRadius(50%);
+    overflow: visible;
+}
+.reg-way .circle i {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    background: #ffe100;
+    @include borderRadius(50%);
+    z-index: 10;
+}
+.reg-way h4 {
+    padding: 32px 0 14px 0;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+}
+.reg-way .reg-seller h4 { font-weight: bold;}
+.reg-way img {
+    width: 74px;
+}
+
+
+//注册表单
+.reg-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 528px;
+    height: 590px;
+    z-index: 100;
+}
+.reg-form {
+    .reg-logo{ 
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .reg-logo img {
+        width: 182px;
+    }
+}
+@media (min-width: 768px){
+    .reg-form {
+        background: #fff;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: 3px solid #1b1b1b;
+    }
+}
+.reg-success {
+    padding: 48px 0;
+    background: #fff;
+    text-align: center;
+}
+.reg-success h4 {
+    width: 94px;
+    height: 94px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 94px;
+    color: #ffe100;
+    font-size: 47px;
+    border: 1px solid #ffe100;
+    @include borderRadius(50%);
+}
+.reg-success p {
+    margin: 45px 0 50px 0;
+    line-height: 28px;
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+}
+.reg-success .sub-btn { width: 80%;}
