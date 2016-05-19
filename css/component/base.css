@@ -1,0 +1,20 @@
+.collect {
+  display: block;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+.collected {
+  background: #ffe100; }
+
+.uncollect {
+  background: #dcdcdc; }
+
+/*# sourceMappingURL=base.css.map */

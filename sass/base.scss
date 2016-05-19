@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+//配色
+$color: #111;
+$paleColor: #999;
+$linkColor: #111;
+$bgColor: #fff;
+$bgpartColor: #e9e9e9;
+$border: 1px solid #e5e5e5;
+$borderDeep: 1px solid #333;
+$borderHover: 1px solid #ffe100;
+
+//大小
+$fontSize: 14px;
+//动画
+@mixin transition($speed:.3s,$obj:all) {
+    -webkit-transition: $obj $speed;
+    -moz-transition: $obj $speed;
+    -ms-transition: $obj $speed;
+    transition: $obj $speed;
+}
+
+@mixin transform($type){
+    -webkit-transform: $type;    
+    -moz-transform: $type;    
+    -ms-transform: $type;    
+    transform: $type;    
+}
+
+@mixin borderRadius($radius:4px){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+
+//收藏按钮
+.collect {
+    display: block;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    color: #fff;
+    @include borderRadius;
+}
+.collected { background: #ffe100;}
+.uncollect { background: #dcdcdc;}

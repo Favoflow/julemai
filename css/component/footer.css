@@ -1,0 +1,90 @@
+.collect {
+  display: block;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+.collected {
+  background: #ffe100; }
+
+.uncollect {
+  background: #dcdcdc; }
+
+.footer {
+  width: 100%;
+  padding: 40px 0;
+  background: #f6f6f6; }
+
+.footer-list li {
+  float: left;
+  width: 20%;
+  text-align: left; }
+
+.footer-list li dt {
+  color: #111;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 15px; }
+
+.footer-list li dd a {
+  font-size: 12px;
+  color: #4c4c4c;
+  line-height: 30px; }
+
+.footer-list li dd a:hover {
+  text-decoration: underline; }
+
+.footer-info span {
+  display: block;
+  text-align: right; }
+
+.footer-tel {
+  font-size: 22px;
+  color: #333;
+  line-height: 30px; }
+
+.footer-time {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px; }
+
+.footer-kefu {
+  display: block;
+  margin-top: 8px;
+  float: right;
+  text-align: center;
+  width: 154px;
+  height: 32px;
+  line-height: 32px;
+  border: 1px solid #333;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.footer-kefu .iconfont {
+  margin-right: 10px; }
+
+.footer-kefu:hover {
+  background: #333;
+  color: #fff; }
+
+.footer-top {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5; }
+
+.footer-copyright {
+  padding-top: 18px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 12px;
+  color: #999; }
+
+/*# sourceMappingURL=footer.css.map */

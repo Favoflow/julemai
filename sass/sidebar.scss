@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import "base";
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 36px;
+    height: 100%;
+    z-index: 9999;
+    background: #1a1a1a;
+}
+.sidebar-list {
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    width: 100%;
+}
+.sidebar a {
+    display: block;
+    padding: 10px 0;
+    width: 22px;
+    margin: 0 auto;
+    color: #fff;
+    border-bottom: $border;
+    text-align: center;
+    font-size: 12px;
+}
+
+.sidebar .to-top {
+    position: absolute;
+    bottom: 4vh;
+    left: 7px;
+    border-bottom: none;
+    border-top: $border;
+}
+.sidebar .to-top span {
+    display: block;
+    @include transform(scale(0.8,0.8));
+}
