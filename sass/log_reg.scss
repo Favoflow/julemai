@@ -27,6 +27,7 @@
     width: 100%;
     min-height: 100%;
     padding-bottom: 172px;
+    padding-top: 100px;
     background: #ffe100;
 }
 
@@ -162,15 +163,13 @@
 
 //注册表单
 .reg-form {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 528px;
-    height: 590px;
-    z-index: 100;
+    z-index: 120;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .reg-form {
     .reg-logo{ 
@@ -189,6 +188,8 @@
         border-top: 3px solid #1b1b1b;
     }
 }
+
+//注册成功
 .reg-success {
     padding: 48px 0;
     background: #fff;
@@ -213,3 +214,52 @@
     color: #666;
 }
 .reg-success .sub-btn { width: 80%;}
+
+.form-reg { float: left;}
+.form-forget { float: right;}
+.form-step a {
+    font-size: 14px;
+    color: #4c4c4c;
+}
+.sub-back { margin-top: 20px;}
+
+.help-block { margin-top: 0px; margin-bottom: 0px;}
+
+//注册协议
+.protocol-shadow {
+    display: none;
+    padding: 10% 0;
+}
+.protocol {
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background: #fff;
+    overflow-y: scroll;
+}
+.protocol h4 {
+    color: #000;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+.protocol dl,.protocol p {
+    font-size: 12px;
+    color: $color;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+.protocol dt { font-weight: 400;}
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}

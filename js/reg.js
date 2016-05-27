@@ -8,12 +8,21 @@ var reg = {
             '-ms-transform':'scale('+_scale+','+_scale+')',
             'transform':'scale('+_scale+','+_scale+')'
         })
-
     }
 }
 $(function(){
     reg.init();
     window.addEventListener('resize',function(){
         reg.init();
+    });
+    $('.reg-user,.reg-seller').on('click',function(){
+        $('.reg-way').hide();
+        $('.reg-form').show()
+    });
+    $('.close').on('click',function(){
+        $('.shadow').hide();
+    });
+    $('.form-protocol').on('click',function(){
+        $('.shadow').show();
     })
 })

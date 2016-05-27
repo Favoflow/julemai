@@ -1,0 +1,60 @@
+#kkpager {
+  margin-top: 20px;
+  text-align: center; }
+  #kkpager div {
+    display: inline-block; }
+  #kkpager div:after {
+    display: block;
+    clear: both;
+    content: ""; }
+  #kkpager .pageBtnWrap {
+    float: left;
+    line-height: 34px; }
+    #kkpager .pageBtnWrap a, #kkpager .pageBtnWrap .disabled, #kkpager .pageBtnWrap .curr {
+      float: left;
+      text-align: center;
+      min-width: 35px;
+      padding: 0 10px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      font-size: 12px;
+      color: #333;
+      margin-right: 5px; }
+      #kkpager .pageBtnWrap a .iconfont, #kkpager .pageBtnWrap .disabled .iconfont, #kkpager .pageBtnWrap .curr .iconfont {
+        font-size: 12px;
+        color: #999; }
+    #kkpager .pageBtnWrap .spanDot {
+      float: left;
+      color: #ccc;
+      line-height: 34px;
+      margin-right: 5px;
+      font-size: 12px; }
+    #kkpager .pageBtnWrap .disabled .iconfont {
+      cursor: not-allowed; }
+    #kkpager .pageBtnWrap .curr {
+      background: #ffe100;
+      border: 1px solid #ffe100; }
+  #kkpager .goPageBox {
+    float: left;
+    font-size: 12px;
+    color: #333;
+    line-height: 34px; }
+  #kkpager #kkpager_btn_go_input {
+    width: 50px;
+    height: 34px;
+    padding: 0 10px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    text-align: center;
+    margin: 0 5px; }
+  #kkpager #kkpager_btn_go {
+    width: 50px;
+    height: 34px;
+    text-align: center;
+    margin-left: 5px;
+    border: 1px solid #e5e5e5;
+    background: #fff; }
+  #kkpager .infoTextAndGoPageBtnWrap {
+    float: left; }
+
+/*# sourceMappingURL=page.css.map */

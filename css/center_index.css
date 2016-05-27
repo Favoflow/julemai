@@ -1,0 +1,90 @@
+.center-top {
+  width: 100%;
+  padding: 22px 0;
+  background: #fff; }
+
+.center-order-type {
+  margin-top: 20px;
+  background: #fff;
+  padding-bottom: 20px; }
+  .center-order-type h3 {
+    padding-left: 3%;
+    font-size: 16px;
+    line-height: 52px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px; }
+  .center-order-type li {
+    float: left;
+    width: 20%;
+    text-align: center; }
+  .center-order-type .iconfont {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: #fffad8;
+    border: 1px solid #ffe100;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffe100; }
+  .center-order-type h4 {
+    margin-top: 12px;
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center; }
+    .center-order-type h4 em {
+      color: #ff6600; }
+
+.center-money-info {
+  width: 100%;
+  padding: 30px 0;
+  background: #fff; }
+  .center-money-info li {
+    float: left;
+    width: 25%;
+    line-height: 20px;
+    height: 60px;
+    border-right: 1px solid #e5e5e5;
+    color: #333;
+    padding: 0 3%; }
+  .center-money-info li:last-child {
+    border: none; }
+  .center-money-info h4 {
+    line-height: 28px; }
+  .center-money-info li span {
+    display: block;
+    line-height: 32px; }
+  .center-money-info li .price i {
+    font-size: 22px; }
+  .center-money-info .center-money-rest {
+    position: relative; }
+  .center-money-info .center-money-rest .price {
+    float: left;
+    color: #ff7200; }
+  .center-money-info .center-money-dong .price {
+    color: #00c0ff; }
+  .center-money-info .center-money-fan .price {
+    color: #ffe100; }
+  .center-money-info .center-money-save .price {
+    color: #999; }
+  .center-money-info .withdraw {
+    float: right;
+    width: 50px;
+    height: 22px;
+    margin-top: 5px;
+    line-height: 22px;
+    background: #ffe100;
+    text-align: center;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    border-radius: 11px; }
+
+/*# sourceMappingURL=center_index.css.map */

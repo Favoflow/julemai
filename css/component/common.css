@@ -1,0 +1,601 @@
+.col-1 {
+  width: 1%; }
+
+.col-2 {
+  width: 2%; }
+
+.col-3 {
+  width: 3%; }
+
+.col-4 {
+  width: 4%; }
+
+.col-5 {
+  width: 5%; }
+
+.col-6 {
+  width: 6%; }
+
+.col-7 {
+  width: 7.0%; }
+
+.col-8 {
+  width: 8%; }
+
+.col-9 {
+  width: 9%; }
+
+.col-10 {
+  width: 10%; }
+
+.col-11 {
+  width: 11%; }
+
+.col-12 {
+  width: 12%; }
+
+.col-13 {
+  width: 13%; }
+
+.col-14 {
+  width: 14.0%; }
+
+.col-15 {
+  width: 15%; }
+
+.col-16 {
+  width: 16%; }
+
+.col-17 {
+  width: 17%; }
+
+.col-18 {
+  width: 18%; }
+
+.col-19 {
+  width: 19%; }
+
+.col-20 {
+  width: 20%; }
+
+.col-21 {
+  width: 21%; }
+
+.col-22 {
+  width: 22%; }
+
+.col-23 {
+  width: 23%; }
+
+.col-24 {
+  width: 24%; }
+
+.col-25 {
+  width: 25%; }
+
+.col-26 {
+  width: 26%; }
+
+.col-27 {
+  width: 27%; }
+
+.col-28 {
+  width: 28.0%; }
+
+.col-29 {
+  width: 29.0%; }
+
+.col-30 {
+  width: 30%; }
+
+.col-31 {
+  width: 31%; }
+
+.col-32 {
+  width: 32%; }
+
+.col-33 {
+  width: 33%; }
+
+.col-34 {
+  width: 34%; }
+
+.col-35 {
+  width: 35%; }
+
+.col-36 {
+  width: 36%; }
+
+.col-37 {
+  width: 37%; }
+
+.col-38 {
+  width: 38%; }
+
+.col-39 {
+  width: 39%; }
+
+.col-40 {
+  width: 40%; }
+
+.col-41 {
+  width: 41%; }
+
+.col-42 {
+  width: 42%; }
+
+.col-43 {
+  width: 43%; }
+
+.col-44 {
+  width: 44%; }
+
+.col-45 {
+  width: 45%; }
+
+.col-46 {
+  width: 46%; }
+
+.col-47 {
+  width: 47%; }
+
+.col-48 {
+  width: 48%; }
+
+.col-49 {
+  width: 49%; }
+
+.col-50 {
+  width: 50%; }
+
+.col-51 {
+  width: 51%; }
+
+.col-52 {
+  width: 52%; }
+
+.col-53 {
+  width: 53%; }
+
+.col-54 {
+  width: 54%; }
+
+.col-55 {
+  width: 55.0%; }
+
+.col-56 {
+  width: 56.0%; }
+
+.col-57 {
+  width: 57.0%; }
+
+.col-58 {
+  width: 58.0%; }
+
+.col-59 {
+  width: 59%; }
+
+.col-60 {
+  width: 60%; }
+
+.col-61 {
+  width: 61%; }
+
+.col-62 {
+  width: 62%; }
+
+.col-63 {
+  width: 63%; }
+
+.col-64 {
+  width: 64%; }
+
+.col-65 {
+  width: 65%; }
+
+.col-66 {
+  width: 66%; }
+
+.col-67 {
+  width: 67%; }
+
+.col-68 {
+  width: 68%; }
+
+.col-69 {
+  width: 69%; }
+
+.col-70 {
+  width: 70%; }
+
+.col-71 {
+  width: 71%; }
+
+.col-72 {
+  width: 72%; }
+
+.col-73 {
+  width: 73%; }
+
+.col-74 {
+  width: 74%; }
+
+.col-75 {
+  width: 75%; }
+
+.col-76 {
+  width: 76%; }
+
+.col-77 {
+  width: 77%; }
+
+.col-78 {
+  width: 78%; }
+
+.col-79 {
+  width: 79%; }
+
+.col-80 {
+  width: 80%; }
+
+.col-81 {
+  width: 81%; }
+
+.col-82 {
+  width: 82%; }
+
+.col-83 {
+  width: 83%; }
+
+.col-84 {
+  width: 84%; }
+
+.col-85 {
+  width: 85%; }
+
+.col-86 {
+  width: 86%; }
+
+.col-87 {
+  width: 87%; }
+
+.col-88 {
+  width: 88%; }
+
+.col-89 {
+  width: 89%; }
+
+.col-90 {
+  width: 90%; }
+
+.col-91 {
+  width: 91%; }
+
+.col-92 {
+  width: 92%; }
+
+.col-93 {
+  width: 93%; }
+
+.col-94 {
+  width: 94%; }
+
+.col-95 {
+  width: 95%; }
+
+.col-96 {
+  width: 96%; }
+
+.col-97 {
+  width: 97%; }
+
+.col-98 {
+  width: 98%; }
+
+.col-99 {
+  width: 99%; }
+
+.t-right {
+  text-align: right; }
+
+.t-left {
+  text-align: left; }
+
+.t-center {
+  text-align: center; }
+
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999; }
+
+.collect {
+  display: block;
+  width: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+.collect:hover {
+  color: #fff; }
+
+.collected {
+  background: #ffe100; }
+
+.uncollect {
+  background: #dcdcdc; }
+
+.icon-tianmao {
+  color: #c00a12; }
+
+.icon-taobao {
+  color: #fc461e; }
+
+.sub-btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  background: #ffe100;
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.sub-btn:hover {
+  background: rgba(255, 225, 0, 0.8); }
+
+.sub-back {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 36px;
+  font-size: 18px;
+  color: #666;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.sub-back:hover {
+  background: #fff;
+  color: #111;
+  border: 1px solid #111; }
+
+.sub-reset {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 36px;
+  font-size: 18px;
+  color: #fff;
+  background: #111;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.sub-reset:hover {
+  background: rgba(17, 17, 17, 0.8); }
+
+.form-group {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  color: #999; }
+
+.form-control {
+  height: 50px;
+  line-height: 36px;
+  border: 1px solid #e5e5e5;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.form-control:focus {
+  border: 1px solid #ffe100;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.form-half:after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+.form-half .form-control {
+  float: left;
+  width: 60%; }
+
+.form-half .form-code {
+  float: right;
+  width: 36%;
+  height: 50px;
+  overflow: hidden; }
+
+.form-half .form-resend {
+  float: right;
+  width: 36%;
+  height: 50px;
+  text-align: center; }
+
+.checkbox {
+  color: #999; }
+
+.form-protocol {
+  color: #ffe100; }
+
+.form-group label {
+  color: #333334;
+  font-size: 14px;
+  line-height: 50px; }
+
+.form-error {
+  line-height: 50px;
+  color: #ffe100;
+  font-size: 14px;
+  margin-bottom: -20px; }
+
+.form-error .iconfont {
+  margin-right: 10px; }
+
+.form-tips {
+  font-size: 14px;
+  color: #333;
+  line-height: 24px; }
+
+.form-select {
+  position: relative;
+  background: #f8f8f8;
+  border: 1px solid #e5e5e5; }
+  .form-select select {
+    width: 100%;
+    -webkit-appearance: none;
+    font-size: 14px;
+    border: none;
+    background: none; }
+  .form-select select:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent; }
+  .form-select .select-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -2px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent; }
+
+.form-textarea {
+  resize: none;
+  height: 100px; }
+
+.no_records {
+  display: none;
+  width: 100%;
+  height: 290px;
+  padding: 115px 0;
+  background: #fff;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #333;
+  line-height: 20px;
+  text-align: center; }
+  .no_records .no-records-main {
+    display: inline-block; }
+  .no_records .no-records-icon {
+    float: left;
+    width: 60px;
+    margin-right: 20px; }
+  .no_records p {
+    float: left;
+    padding: 11px 0; }
+  .no_records span {
+    display: block; }
+  .no_records a {
+    font-size: 12px;
+    color: #ffe100;
+    text-decoration: underline; }
+
+.kind-tips {
+  width: 100%;
+  padding: 10px 18px;
+  background: #fffad4;
+  border: 1px solid #ffe100;
+  font-size: 12px;
+  color: #ff7200;
+  line-height: 20px; }
+
+.iconfont {
+  margin-right: 10px;
+  font-size: 14px; }
+
+.icon-zhifubao {
+  color: #3497ff; }
+
+.icon-yinxingqia {
+  color: #ffe100; }
+
+.icon-zhongguoyinxing {
+  color: #ae1617; }
+
+.icon-jiaotongyinxing {
+  color: #1b308b; }
+
+.icon-gongshangyinxing {
+  color: #f0383b; }
+
+.icon-pufa {
+  color: #0a6cbb; }
+
+.icon-youzheng {
+  color: #368157; }
+
+.icon-minshengyinxing {
+  color: #3a9f79; }
+
+.icon-jiansheyinxing {
+  color: #0155b9; }
+
+.icon-guangfayinxing {
+  color: #d40417; }
+
+.icon-icon0201fuben30 {
+  color: #fcc329; }
+
+.icon-zhaoshangyinxing {
+  color: #e70300; }
+
+.icon-beijingyinxing {
+  color: #f13233; }
+
+.icon-zhongxinyinxing {
+  color: #d81b17; }
+
+.icon-guangdayinxing {
+  color: #e7cf2c; }
+
+.icon-nongyeyinxing {
+  color: #329d6b; }
+
+.icon-pinganyinxingsolid {
+  color: #eb6434; }
+
+.icon-xingyeyinxing {
+  color: #031f9a; }
+
+/*# sourceMappingURL=common.css.map */

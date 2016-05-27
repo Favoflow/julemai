@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import "base";
+
+html,body { background: #f7f7f7;}
+.center { margin-top: 25px;}
+.center-navbar {
+    width: 150px;
+    padding: 18px 0;
+    background: #fff;
+    margin: 0 auto;
+}
+.center-navbar {
+    .center-ava{
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+    }
+    .center-ava img {
+        width: 100%;
+    }
+    .nickname {
+        font-size: 14px;
+        text-align: center;
+        line-height: 42px;
+        color: $color;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .edit {
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        text-align: center;
+        line-height: 24px;
+        background: $baseColor;
+        color: #fff;
+        font-size: 12px;
+        @include borderRadius(12px);
+    }
+    .center-menu li {
+        width: 106px;
+        padding: 7px 0;
+        margin: 0 auto;
+        border-bottom: $border;
+    }
+    .center-menu li:last-child { border: none;}
+    .center-menu-first {
+        position: relative;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 12px 0;
+        color: $color;
+        overflow: visible;
+    }
+    .border-l {
+        display: none;
+        position: absolute;
+        left: -22px;
+        top: 0;
+        width: 5px;
+        height: 30px;
+        background: #111;
+    }
+    .menu-cur .border-l { display: block;}
+    .center-menu-first:hover .border-l { display: block;}
+    .center-menu-first .iconfont {
+        margin-right: 8px;
+        font-size: 18px;
+        color: $paleColor;
+    }
+    .center-menu-sec {
+        padding: 6px 0;
+        margin-left: -22px;
+        margin-right: -22px;
+    }
+    .center-menu-sec a {
+        display: block;
+        padding-left: 54px;
+        line-height: 30px;
+        font-size: 14px;
+        color: $color;
+        @include transition;
+    }
+    .center-menu-sec a:hover { 
+        color: $color;
+        background: #e5e5e5;
+    }
+}
+
+.center-nav-mobile {
+    padding-top: 10px;
+    background: #fff;
+    .center-ava { 
+        float: left;
+        width: 80px;
+    }
+    .center-ava img {
+        width: 100%;
+    }
+    .center-set {
+        float: left;
+        margin-left: 20px;
+        padding: 20px 0;
+    }
+}

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+@import "base";
+
+
+
+//上传图片
+
+@media (min-width:768px){
+    .col-md-8 {
+        .form-group label { 
+            width: 15%;
+        }
+        .form-control { width: 85%;}
+        .form-group p {
+            padding-left: 15%;
+            line-height: 34px;
+        }    
+    }
+    .col-md-5 {
+        .form-group label { 
+            width: 25%;
+        }
+        .form-control { width: 75%;}
+        .form-group p {
+            padding-left: 25%;
+            line-height: 34px;
+        }    
+    }
+}
+@media (max-width:768px){
+    .form-group label { width: 22%;}
+    .form-control { width: 78%;}
+    .form-group p {
+        padding-left: 22%;
+        line-height: 34px;
+    }
+}
+.appeal {
+    background: #fff;
+    padding: 0 3% 60px;
+    h2 {
+        font-size: 18px;
+        color: $color;
+        border-bottom: $border;
+        line-height: 80px;
+        margin-bottom: 40px;
+    }
+    .appeal-form { float: left;}
+    .form-group:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+    .form-group {
+        label {
+            float: left;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 35px;
+            color: $color;
+        }
+        .form-control {
+            float: left;
+            @include borderRadius;
+            @include compatible(box-flex,1);
+        }
+        input.form-control {
+            height: 35px;
+            line-height: 35px;
+        }
+        .form-select {
+            height: 34px;
+            line-height: 20px;
+            select {
+                height: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+    .account { 
+        float: left;
+        font-size: 14px;
+        color: $color;
+        line-height: 34px;
+    }
+    .form-upload {
+        position: relative;
+        padding: 0;
+        border: none;
+        p{
+            font-size: 12px;
+            color: $paleColor;
+            line-height: 34px;
+        }
+        .kv-fileinput-caption,.kv-fileinput-upload { display: none;}
+        #file-up{
+            position: absolute;
+            top: 54px;
+            left: 0;
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .form-btn {
+        width: 70%;
+        margin: 0 auto;
+        button {
+            width: 48%;
+            height: 48px;
+            @include borderRadius;
+        }
+        .sub-btn { margin-right: 2%;}
+    }
+    .appeal-pro {
+        float: right;
+        padding: 0 30px 10px;
+        background: #f7f7f7;
+        h3 {
+            font-size: 14px;
+            color: $color;
+            line-height: 60px;
+        }
+        .pro-info {
+            display: -webkit-box;
+            display: box;
+            padding-bottom: 30px;
+            .pro-info-pic {
+                display: block;
+                width: 50px;
+                height: 50px;
+            }
+            h4 {
+                @include compatible(box-flex,1);
+                font-size: 12px;
+                color: $color;
+                line-height: 16px;
+                padding-left: 15px;
+                .iconfont { margin-right: 6px;}
+            }
+        }
+        .pro-detail {
+            padding: 22px 0;
+            border-top: 1px dotted #e5e5e5;
+            border-bottom: 1px dotted #e5e5e5;
+            li {
+                line-height: 30px;
+                font-size: 12px;
+                color: $color;
+                i { color: #ff7200;}
+            }
+        }
+        .pro-time {
+            line-height: 30px;
+            font-size: 12px;
+            color: $color;
+            padding: 22px 0;
+        }
+    }
+}
+
+.reply .pro-info { margin-top: 30px;}

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import "base";
+
+
+#kkpager {
+    margin-top: 20px;
+    text-align: center;
+    div { 
+        display: inline-block;
+    }
+    div:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+    .pageBtnWrap:after {}
+    .pageBtnWrap {
+        float: left;
+        line-height: 34px;
+        a,.disabled,.curr {
+            float: left;
+            text-align: center;
+            min-width: 35px;
+            padding: 0 10px;
+            background: #fff;
+            border: $border;
+            font-size: 12px;
+            color: $color;
+            margin-right: 5px;
+            .iconfont { 
+                font-size: 12px;
+                color: $paleColor;
+            }
+        }
+        .spanDot {
+            float: left;
+            color: #ccc;
+            line-height: 34px;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        .disabled .iconfont {cursor: not-allowed;}
+        .curr {
+            background: $baseColor;
+            border: 1px solid $baseColor;
+        }
+    }
+    .goPageBox {
+        float: left;
+        font-size: 12px;
+        color: $color;
+        line-height: 34px;
+    }
+    #kkpager_btn_go_input {
+        width: 50px;
+        height: 34px;
+        padding: 0 10px;
+        border: $border;
+        background: #fff;
+        text-align: center;
+        margin: 0 5px;
+    }
+    #kkpager_btn_go {
+        width: 50px;
+        height: 34px;
+        text-align: center;
+        margin-left: 5px;
+        border: $border;
+        background: #fff;
+    }
+    .infoTextAndGoPageBtnWrap {
+        float: left;
+    }
+}

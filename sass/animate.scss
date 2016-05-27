@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "base";
+
+.rolling-before {
+    @include transform(rotateY(90deg)); 
+    @include transition(1.5s);
+}
+.rolling-before.rolling {
+    @include transform(rotateY(0));
+}

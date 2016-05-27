@@ -76,8 +76,7 @@
   margin: 9px auto 6px;
   background-color: #ffe100;
   border-radius: 12px;
-  height: 24px;
-  line-height: 24px;
+  line-height: 22px;
   color: #000;
 }
 .vip-con .seprate {
@@ -273,33 +272,35 @@
 .icon-taobao { color: #fc461e;}
 
 .mrl-panic-buying {
+    float: left;
     margin-top: 15px;
     font-size: 14px;
     color: #1a1a1a;
     line-height: 32px;
 }
-.mrl-panic-buying i { font-size: 18px;}
+.mrl-panic-buying i { 
+    font-size: 16px;
+    color: #666;
+    margin-left: 6px;
+}
 .mrl-discount {
     color: #1a1a1a;
     line-height: 50px;
 }
-.mrl-discount .discount-price { 
-    font-size: 14px;
-    float: left;
-}
-.mrl-discount .discount-price i { font-size: 28px;}
+.discount-price { font-size: 14px;}
+.discount-price i { font-size: 28px;}
 .mrl-discount .discount-percent {
     position: relative;
     float: left;
-    padding: 18px 0 12px 26px;
+    padding: 15px 0 0 26px;
     margin-left: 20px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 32px;
 }
 .mrl-discount .discount-percent i {
     position: absolute;
     left: 0;
-    top: 17px;
+    top: 20px;
     width: 20px;
     height: 20px;
     background: #ffe100;
@@ -332,7 +333,7 @@
 
 .collect {
     position: absolute;
-    top: 75px;
+    top: 60px;
     right: 15px;
 }
 

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "base";
+
+.reply-check {
+    float: right;
+    .appeal-pro { float: none;}
+    .reply-btn {
+        margin-bottom: 20px;
+        line-height: 45px;
+        height: 45px;
+        @include borderRadius;
+    }
+}
+
+.reply-l {
+    .reply-tips {
+        display: box;
+        display: -webkit-box;
+        padding: 30px 0;
+    }
+    .reply-icon {
+        display: block;
+        width: 50px;
+        text-align: center;
+        font-size: 50px;
+        color: #111;
+    }
+    .reply-tips-r {
+        margin-left: 18px;
+        @include compatible(box-flex,1);
+        h4 {
+            font-size: 18px;
+            color: $color;
+            line-height: 20px;
+            margin-bottom: 14px;
+        }
+        p {
+            font-size: 12px;
+            color: $paleColor;
+            line-height: 18px;
+        }
+    }
+    .reply-list {
+        li {
+            padding: 0 20px;
+            margin-bottom: 20px;
+            border: $border;
+            @include borderRadius;
+        }
+        .reply-list-t {
+            border-bottom: $border;
+            line-height: 50px;
+            .reply-obj {
+                float: left;
+                color: $color;
+                font-size: 16px;
+            }
+            .iconfont { 
+                font-size: 20px;
+                margin-right: 8px;
+            }
+            .reply-time {
+                float: right;
+                font-size: 12px;
+                color: $paleColor;
+            }
+        }
+        .reply-list-b {
+            padding: 15px 0;
+            .reply-content {
+                float: left;
+            }
+            .reply-list-pic {
+                float: right;
+                width: 60px;
+            }
+            .reply-content {
+                font-size: 14px;
+                color: $color;
+                line-height: 20px;
+            }
+        }
+    }
+    .check-more {
+        display: block;
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        border: $border;
+        text-align: center;
+        font-size: 14px;
+        color: $paleColor;
+        @include borderRadius;
+        @include transition;
+    }
+    .check-more:hover {
+        background: #e5e5e5;
+        color: #fff;
+    }
+}

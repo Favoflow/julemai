@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>聚乐买-详情页</title>
+<!--css-s-->
+
+<!--bootstrap-s-->
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+<!--bootstrap-e-->
+
+    <link rel="stylesheet" href="../css/component/reset.css">
+    <link rel="stylesheet" href="../css/component/common.css">
+    <link rel="stylesheet" href="../plugins/fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/component/nav.css">
+    <link rel="stylesheet" href="../css/component/footer.css">
+    <link rel="stylesheet" href="../css/component/sidebar.css">
+    <link rel="stylesheet" href="../css/item.css">
+<!--css-e-->
+
+<!--js-s-->
+
+    <script src="../js/component/jquery-1.12.3.min.js"></script>
+<!--bootstrap-s  -->
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/bootstrap/js/holder.min.js"></script>
+<!--bootstrap-e  -->
+    <script src="../js/component/base.js"></script>
+    <script src="../js/index.js"></script>
+
+<!--js-e-->
+</head>
+<body>
+
+<!--header-s    -->
+<header>
+    
+<!--    顶部导航-->
+    <div class="nav-top hidden-xs">
+        <div class="nav-topMain container clearfix">
+            <a class="nav-topLeft" href="#">聚乐买首页</a>
+            <ul class="nav-topRight">
+                <li class="log">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </li>
+                <li><a href="#"><i class="iconfont icon-kechengliebiao"></i>我的订单</a></li>
+                <li><a href="#"><i class="iconfont icon-shoucangp"></i>我的收藏</a></li>
+                <li><a href="#"><i class="iconfont icon-kefu"></i>联系客服</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<!--    商品导航-->
+   <div class="navbar navbar-static-top navbar-main">
+       <div class="container">
+            <div class="navbar-left">
+                <a class="logo" href="#"><img src="../images/com/logo.png" alt="logo"></a>
+                <ul class="navleft-list hidden-xs">
+                    <li class="nav-cur"><a href="#">首页</a></li>
+                    <li><a href="#">最后疯抢</a></li>
+                </ul>
+            </div>             
+<!--            平板，电脑-->
+            <div class="navbar-right hidden-xs">
+                <ul class="navright-list clearfix">
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-naozhong"></i>
+                            <span>限时限量抢</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-manbaibaoyou"></i>
+                            <span>全场包邮</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-chanpin"></i>
+                            <span>最低售价</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-shangjia1"></i>
+                            <span>商家报名</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+<!--            手机-->
+            <div class="navbar-right visible-xs">
+                <a href="javascript:;" class="navbar-user-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#user_menu"><img class="img-responsive" data-src="holder.js/auto/40x40"></</a>
+                
+                <a href="javascript:;" class="navbar-menu-btn navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#nav_menu"><i class="iconfont icon-kechengliebiao"></i></a>   
+                
+                 <div id="nav_menu" class="collapse navbar-collapse" aria-expanded="false">
+                     <ul class="nav navbar-nav">
+                         <li><a href="#">首页</a></li>
+                         <li><a href="#">最后疯抢</a></li>
+                         <li><a href="#">全场包邮</a></li>
+                         <li><a href="#">最低售价</a></li>
+                         <li><a href="#">商家报名</a></li>
+                     </ul>
+                 </div> 
+                 
+                 <div id="user_menu" class="collapse navbar-collapse" aria-expanded="false">
+                     <ul class="nav navbar-nav">
+                         <li><a href="#">登录</a></li>
+                         <li><a href="#">注册</a></li>
+                         <li><a href="#">我的订单</a></li>
+                         <li><a href="#">我的收藏</a></li>
+                         <li><a href="#">联系客服</a></li>
+                     </ul>
+                 </div>
+            </div>
+       </div>
+   </div>
+</header>
+<!--header-e    -->
+
+
+<!--详情-s-->
+<div class="container">
+    <div class="item">
+<!--        商品信息-s-->
+        <div class="item-top clearfix">
+            <div class="item-left col-md-5 col-xs-12">
+                <a class="item-pic" href="javascript:;"><img class="img-responsive" data-src="holder.js/auto/420x420"></a>
+                <div class="item-share clearfix">
+                    <ul class="share">
+                        <li class="bdshare">
+                        <!-- Baidu Button BEGIN -->
+                        <div class="bdsharebuttonbox item_top_30"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></div>
+                        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"<if condition='$item.hot eq 1'>【全民疯抢】<{$item['title']}>,汇折价只要：<{$item['sell_price']}> 元，快来抢吧！<elseif condition='$item.hot eq 2' />【免费试用】<{$item['title']}>,不要钱免费抢！<else /><{$item['title']}>,汇折价只要：<{$item['sell_price']}> 元，快来抢吧！</if>","bdMini":"2","bdMiniList":false,"bdPic":"<{$Think.config.OSS_NETURL}><{$item['sell_pic']}>","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+                        <!-- Baidu Button END -->
+                        </li>
+                    </ul>
+                    <a class="item-coll" href="javascript:;">
+                        <span class="collect uncollect" href="javascript:;"><i class="iconfont icon-shoucangp"></i></span>
+                        <span>收藏宝贝（2332人气）</span>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="item-info col-md-6 col-xs-12">
+                <li><h4><i class="iconfont icon-tianmao"></i>皆无法将诶日为减肥</h4></li>
+                <li class="item-price clearfix">
+                    <span class="price-real">到手价￥<i>6.00</i></span>  
+                    <span class="price-tags">包邮</span> 
+                    <span class="price-sell">抢购价￥30.00</span>  
+                    <span class="price-discount">购买后返￥24.00</span>   
+                </li>
+
+                <li class="item-count clearfix">
+                    <span class="count-take">已抢购88件</span>
+                    <span class="count-rest">仅剩12件</span>
+                </li>
+
+                <li class="process"><p class="percent" style="width:88%"></p></li>
+                <li class="rest-time">
+                    <i class="iconfont icon-shengyushijian"></i>
+                    <span>剩余时间：20时58分36秒</span>
+                </li>
+                <li class="item-assure">
+                    <i class="iconfont icon-shangjia"></i>
+                    <span>商家已存担保金7545.00元，请放心购买！</span>
+                </li>
+
+                <li class="item-btn clearfix">
+                    <a class="buy-btn" href="javascript:;">立即抢购</a>
+                    <a class="detail-btn" href="javascript:;">查看商品详情</a>
+                </li>
+                <li class="item-tips">
+                    <p class="kind-tips">拍下须知：不要使用店铺优惠劵 ;不要使用淘金币；不参加店铺其他优惠活动；不参加店铺好评返现</p>
+                </li>
+            </ul>
+
+            <div class="item-hot col-md-1 col-xs-12">
+                <h4 class="hot-tit"><span>热门抢购</span></h4>
+                <ul class="clearfix">
+                    <li class="col-md-12 col-xs-3">
+                        <a href="javascript:;"><img class="img-responsive" data-src="holder.js/auto/85x85"></a>
+                        <p>￥30.00</p>
+                    </li>
+                    <li class="col-md-12 col-xs-3">
+                        <a href="javascript:;"><img class="img-responsive" data-src="holder.js/auto/85x85"></a>
+                        <p>￥30.00</p>
+                    </li>
+                    <li class="col-md-12 col-xs-3">
+                        <a href="javascript:;"><img class="img-responsive" data-src="holder.js/auto/85x85"></a>
+                        <p>￥30.00</p>
+                    </li>
+                    <li class="col-md-12 col-xs-3">
+                        <a href="javascript:;"><img class="img-responsive" data-src="holder.js/auto/85x85"></a>
+                        <p>￥30.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<!--        商品信息-e-->
+        
+        <ul class="item-process-tit clearfix">
+            <li class="selecttag"><a href="javascript:;">抢购流程</a></li>
+            <li><a href="javascript:;">抢购会员(5)</a></li>
+        </ul>
+        <div class="item-process">
+            <div class="item-process-list">
+                <ul class="try-process">
+                    <li>
+                        <div class="try-pro-icon hidden-xs">
+                            <span class="iconfont icon-yijiangoumai"></span>
+                            <span class="try-pro-borderb"></span>
+                        </div>
+                        <div class="try-pro-deta">
+                            <h4><i>1</i>获得抢购资格</h4>
+                            <p>点击立即抢购，获得抢购资格。</p>
+                        </div>
+                        <div class="try-pro-pic hidden-xs"><img class="img-responsive" src="../images/item_1.png"></div>
+                    </li>
+                    <li>
+                        <div class="try-pro-icon hidden-xs">
+                            <span class="iconfont icon-shangjia1"></span>
+                            <span class="try-pro-borderb"></span>
+                        </div>
+                        <div class="try-pro-deta">
+                            <h4><i>2</i>到指定平台下单</h4>
+                            <p>点击“查看商品详情”按钮，以下单价<i style="color:#ff7200;">29.90</i>元，到指定平台商品详情页进行下单。</p>
+                        </div>
+                        <div class="try-pro-pic hidden-xs"><img class="img-responsive" src="../images/item_1.png"></div>
+                    </li>
+                    <li>
+                        <div class="try-pro-icon hidden-xs">
+                            <span class="iconfont icon-tianxiedingdan"></span>
+                            <span class="try-pro-borderb"></span>
+                        </div>
+                        <div class="try-pro-deta">
+                            <h4><i>3</i>填写订单号</h4>
+                            <p>60分钟内须返回聚乐买平台填写订单号，否则将自动取消抢购资格。</p>
+                        </div>
+                        <div class="try-pro-pic hidden-xs"><img class="img-responsive" src="../images/item_1.png"></div>
+                    </li>
+                    <li>
+                        <div class="try-pro-icon hidden-xs">
+                            <span class="iconfont icon-xianjin"></span>
+                            <span class="try-pro-borderb"></span>
+                        </div>
+                        <div class="try-pro-deta">
+                            <h4><i>4</i>返还现金</h4>
+                            <p>15个工作日内，商家审核，返现到账，您可以申请提现。</p>
+                        </div>
+                        <div class="try-pro-pic hidden-xs"><img class="img-responsive" src="../images/item_1.png"></div>
+                    </li>
+                </ul>
+                <div class="item-qa col-85">
+                    <h4>常见问题</h4>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>
+                                    <i class="item-q">Q</i>
+                                    <span>下单流程</span>
+                                </dt>
+                                <dd>
+                                    <i class="item-a">A</i>
+                                    <p>买家抢到购买资格后，需在60分钟内通过活动页面进入到指定下单页面，并按照活动页面提示的商品信息（注意规格、款式、下单价、份数）进行拍下，并完成全额付款后返回至聚乐买填写订单号。如未按此流程下单，导致下单价不一致或者商家向聚乐买提出申诉，产生的损失由买家承担。如发现下单价或商品信息与活动不一致的，可向聚乐买客服反映，否则买家将自行承担由此造成的所有损失。</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        
+                        <li>
+                            <dl>
+                                <dt>
+                                    <i class="item-q">Q</i>
+                                    <span>下单价不对怎么办</span>
+                                </dt>
+                                <dd>
+                                    <i class="item-a">A</i>
+                                    <p>买家在下单时若因下单价不一致、有邮费、下单连接失效、商品下架等原因导致无法进行拍下，需主动联系聚乐买客服进行反馈，不能随意填写订单号进行申诉。否则聚乐买将直接取消其本次抢购资格，所产生的损失由买家承担。下单价不对怎么办
+买家在下单时若因下单价不一致、有邮费、下单连接失效、商品下架等原因导致无法进行拍下，需主动联系聚乐买客服进行反馈，不能随意填写订单号进行申诉。否则聚乐买将直接取消其本次抢购资格，所产生的损失由买家承担。</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        
+                        <li>
+                            <dl>
+                                <dt>
+                                    <i class="item-q">Q</i>
+                                    <span>多久能拿到钱</span>
+                                </dt>
+                                <dd>
+                                    <i class="item-a">A</i>
+                                    <p>买家在个人中心填写完正确订单号后，需遵守15天返款规则，不得通过私下联系商家旺旺或干扰商家正常经营、强制要求、威胁等方式要求商家返款。经聚乐买核实，将根据情节严重按违规条例处理。买家获得返还金后，通过在交易平台进行非质量问题的退货退款，聚乐买将采取冻结买家账号及暂停提现处理，如核实属于非质量问题退货退款，聚乐买有权处理当前商品对应获得的返还金额。
+
+</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        
+                        <li>
+                            <dl>
+                                <dt>
+                                    <i class="item-q">Q</i>
+                                    <span>下单注意事项</span>
+                                </dt>
+                                <dd>
+                                    <i class="item-a">A</i>
+                                    <p>参与抢购的买家，若在活动过程中，做出影响商家声誉、填写虚假单号影响商家正常经营的行为或提出其他无理要求（比如对商家的店铺进行恶意申诉、恶意退款、恶意评价、恶拍等其它不切合实际并且危害到商家利益的行为），一经核实，视为买家违规，将按照违规条例进行处理。</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        
+                        <li>
+                            <dl>
+                                <dt>
+                                    <i class="item-q">Q</i>
+                                    <span>评价要求</span>
+                                </dt>
+                                <dd>
+                                    <i class="item-a">A</i>
+                                    <p>买家收到商品后，应及时检查商品质量，商品无问题后，可在交易平台对商品进行确认收货和如实评价；评价应遵守如实客观且有针对性的原则，可从商品质量、商家服务、物流速度、商品包装等方面进行评价，不能带有报复性质、不客观、不真实、毫无针对性的评价、恶意评价、复制他人评价等。买家在交易平台给予活动商品的评价中，涉及打广告、带有聚乐买网站、聚乐买活动相关价格、返款、活动编号、活动链接等相关信息，经聚乐买核实，将按违规条例处理。</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<!--详情-e-->
+
+
+
+<!--footer-s-->
+<footer class="footer">
+    <div class="container clearfix">
+        <div class="hidden-xs footer-top row">
+            <ul class="footer-list col-md-9 col-xs-9">
+                <li> 
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司简介</a></dd>
+                        <dd><a href="javascript:;">联系我们</a></dd>
+                    </dl>
+                </li>
+                <li> 
+                    <dl>
+                        <dt>关注我们</dt>
+                        <dd><a href="javascript:;">官方微信</a></dd>
+                        <dd><a href="javascript:;">新浪微博</a></dd>
+                    </dl>
+                </li>
+                <li> 
+                    <dl>
+                        <dt>帮助中心</dt>
+                        <dd><a href="javascript:;">新手指导</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                    </dl>
+                </li>
+                <li> 
+                    <dl>
+                        <dt>合作伙伴</dt>
+                        <dd><a href="javascript:;">汇折网</a></dd>
+                    </dl>
+                </li>
+                <li> 
+                    <dl>
+                        <dt>商家入驻</dt>
+                        <dd><a href="javascript:;">商家报名</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            
+            <div class="footer-info col-md-3 col-xs-3">
+                <span class="footer-tel">0576-82370386</span>
+                <span class="footer-time">周一至周日 8：30-17：30</span>
+                <a class="footer-kefu" href="javascript:;"><i class="iconfont icon-kefu"></i>联系在线客服</a>
+            </div>
+            
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright@2015-2017  台州聚乐买有限公司 版权所有，并保留所有权益</p>
+            <p>icp备案证书号：浙icp备13032529号-2</p>
+        </div>
+    </div>
+</footer>
+<!--footer-e-->
+
+<!--sidebar-s-->
+<div class="sidebar hidden-xs">
+    <ul class="sidebar-list">
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont icon-kechengliebiao"></i>
+                <span>我的订单</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont icon-shoucangp"></i>
+                <span>我的收藏</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont icon-qianbao"></i>
+                <span>我的钱包</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont icon-kefu"></i>
+                <span>联系客服</span>
+            </a>
+        </li>
+    </ul> 
+    <a class="to-top" href="javascript:;">
+        <i class="iconfont icon-xiangshang"></i>
+        <span>TOP</span>
+    </a>   
+</div>
+<!--sidebar-e-->
+</body>
+</html>

@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 //配色
-$color: #111;
+$color: #333;
 $paleColor: #999;
+$baseColor: #ffe100;
 $linkColor: #111;
 $bgColor: #fff;
 $bgpartColor: #e9e9e9;
@@ -41,82 +42,16 @@ $fontSize: 14px;
     animation: $parameter;
 }
 
+
+@mixin compatible($name,$attr){
+    -webkit-#{$name} : $attr;
+    -moz-#{$name} : $attr;
+    -ms-#{$name}: $attr;
+     #{$name} : $attr;
+}
 @mixin keyframes($name){ 
     @-webkit-keyframes #{$name} { @content;}; 
     @-moz-keyframes #{$name} { @content;};  
     @-ms-keyframes #{$name} { @content;};  
     @keyframes #{$name} { @content;};
 }
-
-
-
-//收藏按钮
-.collect {
-    display: block;
-    width: 26px;
-    height: 26px;
-    text-align: center;
-    line-height: 26px;
-    font-size: 14px;
-    color: #fff;
-    @include borderRadius;
-}
-.collect:hover { color: #fff;}
-.collected { background: #ffe100;}
-.uncollect { background: #dcdcdc;}
-
-
-//表单
-.form-group { 
-    margin-bottom: 20px;
-    color: $paleColor;
-}
-.form-control {
-    height: 50px;
-    line-height: 50px;
-    border: $border;
-    @include borderRadius(0);
-    @include transition;
-}
-.form-control:focus {
-    border: $borderHover;
-    box-shadow: none;
-}
-
-.form-half:after {
-    display: block;
-    clear: both;
-    content: "";
-}
-.form-half .form-control {
-    float: left;
-    width: 60%;
-}
-.form-half .form-code {
-    float: right;
-    width: 36%;
-    height: 50px;
-    overflow: hidden;
-}
-.form-half .form-resend {
-    float: right;
-    width: 36%;
-    height: 50px;
-    line-height: 38px;
-    text-align: center;
-}
-.sub-btn {
-    width: 100%;
-    height: 52px;
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    color: #000;
-    background: #ffe100;
-    border: none;
-}
-.checkbox { color: $paleColor;}
-.sub-btn:hover {
-    background: rgba(255,225,0,.8);
-}
-.form-protocol { color: #ffe100;}

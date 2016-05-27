@@ -1,0 +1,104 @@
+html, body {
+  background: #f7f7f7; }
+
+.center {
+  margin-top: 25px; }
+
+.center-navbar {
+  width: 150px;
+  padding: 18px 0;
+  background: #fff;
+  margin: 0 auto; }
+
+.center-navbar .center-ava {
+  display: block;
+  width: 100px;
+  margin: 0 auto; }
+.center-navbar .center-ava img {
+  width: 100%; }
+.center-navbar .nickname {
+  font-size: 14px;
+  text-align: center;
+  line-height: 42px;
+  color: #333;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+.center-navbar .edit {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  text-align: center;
+  line-height: 24px;
+  background: #ffe100;
+  color: #fff;
+  font-size: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px; }
+.center-navbar .center-menu li {
+  width: 106px;
+  padding: 7px 0;
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5; }
+.center-navbar .center-menu li:last-child {
+  border: none; }
+.center-navbar .center-menu-first {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 12px 0;
+  color: #333;
+  overflow: visible; }
+.center-navbar .border-l {
+  display: none;
+  position: absolute;
+  left: -22px;
+  top: 0;
+  width: 5px;
+  height: 30px;
+  background: #111; }
+.center-navbar .menu-cur .border-l {
+  display: block; }
+.center-navbar .center-menu-first:hover .border-l {
+  display: block; }
+.center-navbar .center-menu-first .iconfont {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #999; }
+.center-navbar .center-menu-sec {
+  padding: 6px 0;
+  margin-left: -22px;
+  margin-right: -22px; }
+.center-navbar .center-menu-sec a {
+  display: block;
+  padding-left: 54px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+.center-navbar .center-menu-sec a:hover {
+  color: #333;
+  background: #e5e5e5; }
+
+.center-nav-mobile {
+  padding-top: 10px;
+  background: #fff; }
+  .center-nav-mobile .center-ava {
+    float: left;
+    width: 80px; }
+  .center-nav-mobile .center-ava img {
+    width: 100%; }
+  .center-nav-mobile .center-set {
+    float: left;
+    margin-left: 20px;
+    padding: 20px 0; }
+
+/*# sourceMappingURL=center_frame.css.map */

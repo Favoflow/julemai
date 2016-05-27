@@ -16,14 +16,14 @@
 .nav-topMain { height: 32px;}
 .nav-topRight li {
     float: left;
-    margin: 9px 0;
+    margin: 8px 0;
     padding: 0 16px;
     border-right: 1px solid #747474;
 }
 .nav-topRight li:last-child { border-right: 0; padding-right: 0;}
 .nav-top a { 
     display: block;
-    line-height: 14px;
+    line-height: 16px;
     font-size: 12px;
     color: #747474;
     @include transition;

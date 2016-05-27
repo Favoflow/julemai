@@ -17,6 +17,7 @@ input,button {
 a { 
   text-decoration:none;
   cursor: pointer;
+  overflow: hidden;
 }
 a:hover { text-decoration: none;}
 a:visited { text-decoration: none;}

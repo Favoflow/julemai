@@ -1,0 +1,37 @@
+.kind-tips {
+  margin-bottom: 20px; }
+
+.form-select {
+  position: relative; }
+  .form-select li a {
+    display: block; }
+  .form-select .pay-type {
+    display: none;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    padding: 10px;
+    line-height: 34px; }
+
+.form-cash {
+  position: relative;
+  height: 35px;
+  line-height: 20px; }
+  .form-cash input {
+    line-height: 20px;
+    height: 20px; }
+  .form-cash .cash-unit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35px;
+    height: 33px;
+    line-height: 35px;
+    background: #f8f8f8;
+    text-align: center;
+    border-left: 1px solid #e5e5e5; }
+
+/*# sourceMappingURL=withdraw.css.map */
