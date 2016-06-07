@@ -1,0 +1,179 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 50px; }
+
+.about-nav-main {
+  text-align: center;
+  border: 1px solid #e5e5e5; }
+  .about-nav-main h4 {
+    font-size: 18px;
+    color: #333;
+    line-height: 52px;
+    border-bottom: 1px solid #e5e5e5; }
+  .about-nav-main li {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e5e5; }
+  .about-nav-main li:last-child {
+    border: none; }
+  .about-nav-main .first-menu {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    line-height: 70px;
+    padding-right: 20px; }
+  .about-nav-main .sec-menu {
+    display: none;
+    margin-left: -12%;
+    margin-right: -13%; }
+    .about-nav-main .sec-menu dd a {
+      display: block;
+      line-height: 44px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      transition: all 0.3s; }
+    .about-nav-main .sec-menu dd .cur, .about-nav-main .sec-menu dd a:hover {
+      background: #ffe100; }
+  .about-nav-main .open .sec-menu {
+    display: block; }
+
+.about-main {
+  border: 1px solid #e5e5e5;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 26px;
+  padding-bottom: 30px; }
+  .about-main h2 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #333;
+    padding-left: 18px;
+    border-left: 4px solid #ffe100;
+    margin-bottom: 35px; }
+  .about-main .about-intro {
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 30px; }
+  .about-main .about-pic {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 26px; }
+    .about-main .about-pic img {
+      max-width: 100%; }
+
+.contact-main li {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 60px 0 45px; }
+.contact-main h4 {
+  font-size: 16px;
+  line-height: 50px; }
+  .contact-main h4 i {
+    margin-right: 20px;
+    color: #404040;
+    font-size: 26px; }
+.contact-main .contact-detail span {
+  margin-right: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333; }
+  .contact-main .contact-detail span .iconfont {
+    font-size: 14px;
+    color: #ffe100; }
+
+.about-ques li a {
+  display: block;
+  padding: 0 20px;
+  border-color: #fff #fff #e5e5e5 #fff;
+  border-style: dotted;
+  border-width: 1px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+.about-ques li a:after {
+  display: block;
+  clear: both;
+  content: ""; }
+.about-ques li a:hover {
+  border: 1px solid #ffe100; }
+.about-ques .ques-tit {
+  float: left;
+  font-size: 16px;
+  line-height: 62px;
+  color: #333; }
+.about-ques .ques-time {
+  float: right;
+  font-size: 14px;
+  color: #999;
+  line-height: 62px; }
+
+.ques-answ .answ-tit {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #e5e5e5; }
+  .ques-answ .answ-tit h4 {
+    font-size: 18px;
+    color: #333;
+    line-height: 32px; }
+    .ques-answ .answ-tit h4 i {
+      font-size: 32px;
+      color: #ffe100;
+      line-height: 32px; }
+  .ques-answ .answ-tit .answ-info {
+    margin-top: 18px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #999; }
+.ques-answ .answ-main {
+  padding-bottom: 35px;
+  border-bottom: 1px dotted #e5e5e5; }
+  .ques-answ .answ-main p {
+    font-size: 14px;
+    color: #333;
+    line-height: 32px;
+    margin-top: 20px; }
+.ques-answ .answ-more {
+  position: relative;
+  margin-top: 36px; }
+  .ques-answ .answ-more .answ-back {
+    position: absolute;
+    right: 0;
+    top: 26px;
+    width: 50px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 26px; }
+  .ques-answ .answ-more a {
+    display: block;
+    line-height: 30px;
+    font-size: 12px;
+    color: #333; }
+    .ques-answ .answ-more a span {
+      float: left; }
+    .ques-answ .answ-more a .answ-pre, .ques-answ .answ-more a .answ-next {
+      width: 12px;
+      height: 12px;
+      margin: 9px 10px 9px 0;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      -ms-border-radius: 2px;
+      border-radius: 2px; }
+      .ques-answ .answ-more a .answ-pre i, .ques-answ .answ-more a .answ-next i {
+        display: block;
+        width: 0;
+        height: 0;
+        margin: 0 auto;
+        border-style: solid;
+        border-width: 4px; }
+    .ques-answ .answ-more a .answ-pre {
+      background: #bbbbbb; }
+    .ques-answ .answ-more a .answ-next {
+      background: #ffe100; }
+    .ques-answ .answ-more a .answ-pre i {
+      border-color: transparent transparent #fff transparent; }
+    .ques-answ .answ-more a .answ-next i {
+      margin-top: 4px;
+      border-color: #fff transparent transparent transparent; }
+
+/*# sourceMappingURL=about.css.map */

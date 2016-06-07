@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import "base";
+
+
+@media (min-width: 768px){
+    .col-md-12 .form-group label {
+      width: 12%;
+    }
+    .col-md-12 .form-group .form-control {
+      width: 88%;
+    }
+}
+.form-bank-type {
+  width: 100%;
+}
+.payway-tips {
+    font-size: 12px;
+    color: #666;
+    line-height: 34px;
+    margin-bottom: 10px;
+    i { color: #ff7200;}
+}
+.form-payway {
+    margin-bottom: 50px;
+    li {
+        text-align: center;
+        img {
+            width: 84px;
+            margin-top: 14px;
+        }
+    }
+}
+.recharge {
+    .form-control { height: auto;}
+    .recharge-money-main {
+        border: $border;
+        background: #f7f7f7;
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+    .recharge-money {
+        border: none;
+        padding: 0;    
+    }
+    .recharge-money-input {
+        border: $border;
+        @include borderRadius;
+        width: 170px;
+        input {
+            float: left;
+            width: 135px;
+            padding: 0 5px;
+            background: #fff;
+        }
+        span {
+            float: left;
+            width: 32px;
+            background: #f8f8f8;
+            text-align: center;
+            font-size: 12px;
+            border-left: $border;
+        }
+    }
+    .recharge-tips {
+        font-size: 12px;
+        color: #00c0ff;
+        margin-top: 18px;
+        line-height: 12px;
+    }
+}
+
+.alipay {
+    .alipay-way {
+        a {
+            padding: 27px 30px;
+            border: $border;
+        }
+        h4 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        .alipay-account { 
+            float: left;
+        }
+        .alipay-ercode {
+            float: right;
+        }
+        .account-info {
+            display: -webkit-box;
+            display: box;
+            .iconfont {
+                display: block;
+                width: 60px;
+                font-size: 60px;
+                margin-right: 18px;
+            }
+            p {
+                @include compatible(box-pack,1);
+                margin-top: 13px;
+                span {
+                    display: block;
+                    line-height: 30px;
+                    font-size: 12px;
+                    em { 
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .icon-erweima { color: #009ee7;}
+    }
+    
+    .alipay-proof {
+        margin-top: 30px;
+        border: $border;
+        background: #f7f7f7;
+        padding: 30px;
+        h4 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .proof-list li:after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+        .proof-list li {
+            margin-top: 30px;
+            line-height: 35px;
+            label {
+                float: left;
+                width: 95px;
+                line-height: 35px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        .proof-no input {
+            float: left;
+            width: 230px;
+            padding: 0 15px;
+            border: $border;
+            background: #fff;
+            @include borderRadius;
+        }
+        .proof-no span {
+            float: left;
+            margin-left: 20px;
+            font-size: 12px;
+        }
+        
+        .recharge-money-input {
+            float: left;
+        }
+        .sub-btn {
+            width: 180px;
+            @include borderRadius;
+            margin-top: 20px;
+        }
+        .pl { padding-left: 95px;}
+    }
+}
+.ercode-alert {
+    img {
+        max-width: 80%;
+        width: 340px;
+        max-height: 80%;    
+    }
+    h4 {
+        text-align: left;
+        padding-bottom: 14px;
+        margin-bottom: 10px;
+        border-bottom: $border;
+    }
+}

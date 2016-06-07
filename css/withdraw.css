@@ -34,4 +34,51 @@
     text-align: center;
     border-left: 1px solid #e5e5e5; }
 
+.form-half .form-control {
+  border: none !important;
+  padding: 0; }
+.form-half .form-resend, .form-half .form-code {
+  margin-left: 5%; }
+.form-half .form-resend, .form-half input {
+  float: left;
+  width: 42%;
+  height: 34px;
+  line-height: 32px;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+.form-half input {
+  padding: 0 15px; }
+.form-half .form-code {
+  float: left; }
+
+.form-bank {
+  height: auto !important;
+  border: none !important;
+  padding: 0; }
+
+.bank-list {
+  width: 100%;
+  margin-bottom: 10px;
+  line-height: 20px;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  padding: 6px 12px; }
+  .bank-list input {
+    float: left; }
+  .bank-list label {
+    float: left;
+    width: 90% !important;
+    line-height: 20px !important;
+    margin-left: 10px; }
+
+.bank-bound {
+  color: #ff7e1a;
+  text-decoration: underline; }
+
 /*# sourceMappingURL=withdraw.css.map */

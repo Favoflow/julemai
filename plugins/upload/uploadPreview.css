@@ -1,0 +1,62 @@
+.form-upload { height: auto;}
+#warp {
+    position: relative;
+    margin-top: 15px;
+}
+#up_img_WU_FILE_0 { 
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.upload-btn {
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding: 44px 0;
+    background: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+}
+.upload-btn .iconfont { 
+    display: block;
+    color: #bbb;
+    font-size: 26px;
+    margin-right: 0;
+}
+.upload-area {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-left: 15px;
+}
+.upload-area img {
+    width: 100%;
+    max-height: 100%;
+}
+.upload-area .delete {
+    display: none;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50%;
+    background: rgba(39,38,54,.8);
+    text-align: center;
+}
+.upload-area .delete:hover { background: rgba(39,38,54,.9);}
+.upload-area .delete .iconfont {
+    font-size: 12px;
+    color: #fff;
+    margin-right: 0;
+}

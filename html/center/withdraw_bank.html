@@ -203,42 +203,93 @@
             <h2>我要提现</h2> 
             <p class="kind-tips">提示：每提现一次需要工作人员审核，下一次提现须等待现有提现订单成功到账。</p>
             <div class="row">
-                <form id="signupForm" class="appeal-form col-md-8 col-xs-12">
+                <form id="signupForm" class="appeal-form col-md-5 col-xs-12">
                     <div class="alipay">
                         <div class="form-group">
                             <label for="">提现方式</label>
-                            <span class="account">132435435465</span>
-                        </div> 
-
-                        <div class="form-group">
-                            <label for="">支付宝号</label>
                             <div class="form-select form-control">
                                 <i class="select-arrow"></i>
-                                <span class="withdraw-way"><i class="iconfont icon-zhifubao"></i>支付宝</span>
-                                <input type="hidden" name="way" value="alipay">
+                                <span class="withdraw-way"><i class="iconfont icon-yinxingqia"></i>银行卡</span>
+                                <input type="hidden" name="way" value="bank">
                                 <ul class="pay-type">
                                     <li><a href="#"><i class="iconfont icon-zhifubao"></i>支付宝</a></li>
                                     <li><a href=""><i class="iconfont icon-yinxingqia"></i>银行卡</a></li>
                                 </ul>
                             </div>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="">新密码</label>
-                            <input id="password" type="password" class="form-control" name="password" required=""  aria-required="true">
-                            <p>密码长度8～16位，数字、字母、字符至少包含两种</p>
+                            <label for="">选择银行卡</label>
+                            <div class="form-control form-bank">
+                                <div class="bank-list clearfix">
+                                    <input id="bank-zhongguoyinxing" type="radio" name="bank">
+                                    <label for="bank-zhongguoyinxing"><i class="iconfont icon-zhongguoyinxing"></i>中国银行 6228410360439478888（王大锤）</label>
+                                </div>
+                                
+                                <div class="bank-list clearfix">
+                                    <input id="bank-nongyeyinxing" type="radio" name="bank">
+                                    <label for="bank-nongyeyinxing"><i class="iconfont icon-nongyeyinxing"></i>中国银行 6228410360439478888（王大锤）</label>
+                                </div>
+                                
+                                <div class="bank-list clearfix">
+                                    <input id="bank-zhongguoyinxing" type="radio" name="bank">
+                                    <label for="bank-zhongguoyinxing"><i class="iconfont icon-zhongguoyinxing"></i>中国银行 6228410360439478888（王大锤）</label>
+                                </div>
+                                
+                                <a class="bank-bound" href="javascript:;">绑定其他银行卡</a>
+                            </div>
+                        </div> 
+                        
+                        <div class="form-group">
+                            <label for="">到账时间</label>
+                            <span class="account">2个工作日</span>
+                       </div>
+                       
+                       <div class="form-group">
+                            <label for="">提现金额</label>
+                            <div class="form-control form-cash clearfix">
+                                <input type="text" placeholder="请输入金额">
+                                <span class="cash-unit">元</span>
+                            </div>
+                           <p>可用余额：<i style="color:#ff7200;">35.00</i>元，单比限额5000元</p>
+                       </div>
+                       
+                       <div class="form-group">
+                            <label for="">手机号码</label>
+                            <span class="account">123****1212</span>
                        </div>
 
-                       <div class="form-group">
-                           <label for="">重复密码</label>
-                           <input type="password" class="form-control" placeholder="请设置密码" name="confirm_password" required=""  aria-required="true">
+                       <div class="form-group form-half">
+                           <label for="">图形验证码</label> 
+                           <div class="form-control">
+                               <input type="text" name="code" required=""  aria-required="true">
+                               <a class="form-code" href="javascript:;"><img class="img-responsive" data-src="holder.js/auto/140x50"></a>
+                           </div>
                        </div>
+                        <div class="form-group form-half">
+                            <label for="">短信验证码</label>
+                            <div class="form-control">
+                                <input type="text" name="textCode" required=""  aria-required="true">
+                                <a class="form-resend" href="javascript:;">获取验证码</a>
+                            </div>
+                        </div>
 
                         <div class="form-group form-btn">
-                            <button type="submit" class="sub-btn">确认绑定</button>
+                            <button type="submit" class="sub-btn">申请提现</button>
                         </div> 
                     </div>    
                 </form>
-            </div>       
+            </div>  
+            <!--           无任何记录时显示-->
+            <div class="no_records clearfix">
+                <div class="no-records-main clearfix">
+                    <span class="no-records-icon"><img class="img-responsive" src="../../images/com/no_records.png"></span>
+                    <p>
+                        <span>您还没有绑定提现账号哦！</span>
+                        <span>你可以：<a href="javascript:;">立即绑定账户</a></span>                       
+                    </p> 
+                </div>
+            </div>     
         </div>
 <!--        我要提现-e-->
     </div>
@@ -299,5 +350,16 @@
     </div>
 </footer>
 <!--footer-e-->
+<script>
+    $(function(){
+        $('.form-select').on('click',function(e){
+            $(this).find('.pay-type').toggle(200); 
+            e.stopPropagation();
+        });
+        $('body').on('click',function(){
+            $(this).find('.pay-type').hide(200); 
+        });
+    })
+</script>
 </body>
 </html>

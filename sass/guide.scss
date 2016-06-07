@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import "base";
+
+
+.guide {
+    li {
+        position: relative;
+        text-align: center;
+        img {
+            max-width: 100%;
+            width: 840px;
+        }
+    }
+    .arrow-down {
+        position: absolute;
+        left: 50%;
+        bottom: -27px;
+        margin-left: -34px;
+        width: 68px;
+        height: 28px;
+        z-index: 10;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    .guide-1 {
+        background: #ffe000;
+        .arrow-down { background-image: url(../images/about/arrow1.png);}
+    }
+    .guide-2 {
+        background: #ffa52f;
+        .arrow-down { background-image: url(../images/about/arrow2.png);}
+    }
+    .guide-3 {
+        background: #8bd563;
+        .arrow-down { background-image: url(../images/about/arrow3.png);}
+    }
+    .guide-4 {
+        background: #79c6f9;
+        .arrow-down { background-image: url(../images/about/arrow4.png);}
+    }
+    .guide-5 {
+        background: #f6778a;
+        .arrow-down { background-image: url(../images/about/arrow5.png);}
+    }
+    .guide-6 {
+        background: #55db9f;
+    }
+    .guide-7 {
+        background: #39bb80;
+    }
+    
+    .to-index {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        height: 30px;
+    }
+}

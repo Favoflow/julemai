@@ -1,0 +1,20 @@
+.order-no, .order-buyer, .copy {
+  float: left;
+  margin-right: 25px; }
+
+.copy {
+  margin-top: 14px; }
+
+.order-first-btn {
+  background: #ffe100;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+.order-pay-time {
+  font-size: 12px;
+  color: #666;
+  line-height: 28px; }
+
+/*# sourceMappingURL=sell_order.css.map */

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import "base";
+
+.order-no,.order-buyer,.copy { 
+    float: left;
+    margin-right: 25px;
+}
+.copy { margin-top: 14px;}
+.order-first-btn {
+    background: #ffe100;
+    @include borderRadius;
+}
+.order-pay-time {
+    font-size: 12px;
+    color: #666;
+    line-height: 28px;
+}

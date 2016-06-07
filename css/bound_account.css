@@ -1,0 +1,54 @@
+.bound-acc {
+  background: #fff;
+  padding: 0 4% 60px; }
+  .bound-acc h2 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 80px; }
+  .bound-acc .acc-acount {
+    font-size: 16px;
+    line-height: 60px; }
+    .bound-acc .acc-acount i {
+      color: #00c0ff; }
+
+.bound-acc-main ul {
+  margin-top: 30px; }
+.bound-acc-main li {
+  float: left;
+  width: 270px;
+  padding: 15px;
+  border: 1px solid #e5e5e5;
+  margin: 0 15px;
+  margin-bottom: 15px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+.bound-acc-main .acc-type {
+  float: left;
+  width: 65px; }
+  .bound-acc-main .acc-type .iconfont {
+    font-size: 60px;
+    line-height: 60px; }
+.bound-acc-main .acc-info {
+  float: left;
+  margin-left: 15px; }
+  .bound-acc-main .acc-info span {
+    display: block;
+    line-height: 20px;
+    color: #333; }
+.bound-acc-main .add-account {
+  display: block;
+  line-height: 60px;
+  font-size: 14px;
+  color: #bbb;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+.bound-acc-main .add-account:hover {
+  color: #999; }
+
+/*# sourceMappingURL=bound_account.css.map */

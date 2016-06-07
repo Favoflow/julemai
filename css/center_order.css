@@ -30,7 +30,7 @@
   .center-order .order-tit li {
     display: inline-block;
     padding: 23px 0; }
-  .center-order .order-tit li:last-child {
+  .center-order .order-tit li:last-child a {
     border: none; }
   .center-order .order-tit li a {
     display: block;

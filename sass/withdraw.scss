@@ -40,3 +40,50 @@
         border-left: $border;
     }
 }
+
+.form-half {
+    .form-control { 
+        border: none !important;
+        padding: 0;
+    }
+    .form-resend,.form-code { margin-left: 5%;}
+    .form-resend,input {
+        float: left;
+        width: 42%;
+        height: 34px;
+        line-height: 32px;
+        border: $border;
+        @include borderRadius;
+    }
+    input { padding: 0 15px;}
+    .form-code {
+        float: left;
+    }  
+}
+
+.form-bank { 
+    height: auto !important;
+    border: none !important;
+    padding: 0;
+}
+.bank-list {
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 20px;
+    border: $border;
+    @include borderRadius;
+    padding: 6px 12px;
+    input {
+        float: left;
+    }
+    label { 
+        float: left;
+        width: 90% !important;
+        line-height: 20px !important;
+        margin-left: 10px;
+    }
+}
+.bank-bound {
+    color: #ff7e1a;
+    text-decoration: underline;
+}

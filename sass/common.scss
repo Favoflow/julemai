@@ -1,16 +1,40 @@
 @charset "UTF-8";
 @import "base";
 
-//宽度
-@for $i from 1 to 100 {  
-    .col-#{$i} {  
-        width:percentage($i/100);  
-    }  
-} 
 
-.t-right { text-align: right;}
-.t-left { text-align: left;}
-.t-center { text-align: center;}
+//文字溢出隐藏
+.textOver {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//文字常用颜色
+.blue { color: #00c0ff !important;}
+.orange { color: #ff7200 !important;}
+
+
+//宽度
+@media (min-width:768px){
+    @for $i from 1 to 101 {  
+        .col-#{$i} {  
+            width:percentage($i/100);  
+        }  
+    }     
+}
+
+@media (max-width:768px){
+    @for $i from 1 to 101 {  
+        .col-m-#{$i} {  
+            width:percentage($i/100);  
+        }  
+    }     
+}
+
+.t-right { text-align: right !important;}
+.t-left { text-align: left !important;}
+.t-center { text-align: center !important;}
 //蒙层
 .shadow {
     position: fixed;
@@ -82,6 +106,17 @@
     @include transition;
 }
 .sub-reset:hover { background: rgba(17,17,17,.8);}
+
+.copy {
+    display: block;
+    width: 44px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+    border: $border;
+    @include borderRadius;
+    text-align: center;
+}
 //表单
 .form-group { 
     padding-bottom: 20px;
@@ -222,10 +257,7 @@
 
 
 //银行卡
-.iconfont { 
-    margin-right: 10px;
-    font-size: 14px;
-}
+.iconfont { font-size: 14px;}
 .icon-zhifubao { color: #3497ff;}
 .icon-yinxingqia { color: $baseColor;}
 .icon-zhongguoyinxing { color: #ae1617;}
@@ -244,3 +276,99 @@
 .icon-nongyeyinxing { color: #329d6b;}
 .icon-pinganyinxingsolid { color: #eb6434;}
 .icon-xingyeyinxing { color: #031f9a;}
+
+
+//弹窗
+.alert-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    text-align: center;
+    z-index: 2000;
+    overflow: hidden;
+}
+.alert-main {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    max-width: 90%;
+    max-height: 90%;
+}
+.alert-content {
+    position: relative;
+    top: -50%;
+    left: -50%;
+    margin-top: -50%;
+    padding: 30px 25px;
+    background: #fff; 
+    h4 {
+        color: #000;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    p {
+        font-size: 14px;
+        color: #666;
+        line-height: 20px;
+    }
+}
+.alert-close {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    text-align: center;
+    @include transition;
+    i {
+        color: #fff;
+        line-height: 40px;
+        margin-right: 0;
+    }
+}
+.alert-close:hover { background: #bbb;}
+
+.alert-btn {
+    width: 200px;
+    margin: 22px auto 0;
+    a {
+        width: 90px;
+        line-height: 36px;
+        text-align: center;
+        @include borderRadius;
+    }
+    .alert-s {
+        float: left;
+        background: $baseColor;
+        color: $color;
+    }
+    .alert-c {
+        float: right;
+        background: #111;
+        color: #fff;
+    }
+}
+
+
+//等级
+.level:after { 
+    display: block;
+    clear: both;
+    content: '';
+}
+.level {
+    display: inline-block;
+    font-size: 14px;
+    .iconfont { float: left;}
+    em {
+        float: left;
+        @include transform(scale(.6,.6));
+    }
+}

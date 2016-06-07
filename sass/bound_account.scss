@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import "base";
+
+.bound-acc {
+    background: #fff;
+    padding: 0 4% 60px;
+    h2 {
+        font-size: 18px;
+        color: $color;
+        border-bottom: $border;
+        line-height: 80px;
+    }
+    .acc-acount {
+        font-size: 16px;
+        line-height: 60px;
+        i { color: #00c0ff;}
+    }
+}
+.bound-acc-main {
+    ul { 
+        margin-top: 30px;
+    }
+    li {
+        float: left;
+        width: 270px;
+        padding: 15px;
+        border: $border;
+        margin: 0 15px;
+        margin-bottom: 15px;
+        @include borderRadius;
+    }
+    .acc-type {
+        float: left;
+        width: 65px;
+        .iconfont { 
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+    .acc-info {
+        float: left;
+        margin-left: 15px;
+        span {
+            display: block;
+            line-height: 20px;
+            color: $color;
+        }
+    }
+    .add-account {
+        display: block;
+        line-height: 60px;
+        font-size: 14px;
+        color: #bbb;
+        text-align: center;
+        @include transition;
+    }
+    .add-account:hover { color: #999;}
+}

@@ -1,0 +1,43 @@
+.center-records {
+  padding: 0 5% 30px;
+  background: #fff; }
+  .center-records h2 {
+    font-size: 18px;
+    color: #333;
+    line-height: 80px; }
+  .center-records .records-tit {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5; }
+    .center-records .records-tit li {
+      float: left;
+      width: 120px; }
+    .center-records .records-tit a {
+      display: block;
+      text-align: center;
+      line-height: 46px;
+      color: #666; }
+    .center-records .records-tit .cur {
+      color: #333;
+      border-top: 2px solid #ffe100;
+      border-left: 1px solid #e5e5e5;
+      border-right: 1px solid #e5e5e5;
+      border-bottom: 1px solid #fff;
+      margin-bottom: -1px; }
+  .center-records thead {
+    background: #f5f5f5; }
+  .center-records td, .center-records th {
+    line-height: 22px !important;
+    font-size: 12px;
+    text-align: center; }
+  .center-records .important {
+    color: #ff7200; }
+  .center-records .doing {
+    color: #333; }
+  .center-records .succ {
+    color: #00c0ff; }
+  .center-records .failed {
+    color: #ef0000; }
+  .center-records .green {
+    color: #35c24e; }
+
+/*# sourceMappingURL=center_records.css.map */

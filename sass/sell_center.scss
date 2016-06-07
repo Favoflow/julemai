@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import "base";
+
+.center-top {
+    width: 100%;
+    padding: 22px 0;
+    background: #fff;
+}
+
+.center-order-type {
+    margin-top: 20px;
+    background: #fff;
+    padding-bottom: 20px;
+    h3 {
+        padding-left: 3%;
+        font-size: 16px;
+        line-height: 52px;
+        color: $color;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    li {
+        float: left;
+        width: 33%;
+        text-align: center;
+    }
+    .iconfont {
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        background: #fffad8;
+        border: 1px solid $baseColor;
+        @include borderRadius(50%);
+        font-size: 22px;
+        line-height: 50px;
+        text-align: center;
+        color: $baseColor;
+    }
+    h4 {
+        margin-top: 12px;
+        color: $color;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        em { color: #ff6600;}
+    }
+}
+
+.center-money-info {
+    width: 100%;
+    padding: 30px 0;
+    background: #fff;
+    li {
+        float: left;
+        width: 33%;
+        line-height: 20px;
+        height: 60px;
+        border-right: $border;
+        color: $color;
+        padding: 0 3%;
+    } 
+    li:last-child { border: none;}
+    h4 { line-height: 28px;}
+    li span {
+        display: block;
+        line-height: 32px;
+    }
+    li .price i { font-size: 22px;}
+    .center-money-rest { position: relative;}
+    .center-money-rest .price { float: left; color: #ff7200;}
+    .center-money-dong .price { color: #00c0ff;}
+    .center-money-fan .price { color: $baseColor;}
+    .center-money-save .price { color: #333;}
+    .top-btn {
+        float: left;
+        width: 50px;
+        height: 22px;
+        margin-top: 5px;
+        margin-left: 10px;
+        line-height: 22px;
+        text-align: center;
+        @include borderRadius(11px);
+    }
+    .recharge { background: $baseColor;}
+    .withdraw { 
+        background: #111;
+        color: #fff;
+    }
+}
+
+.center-pro-type {
+    margin-top: 20px;
+    background: #fff;
+    padding-bottom: 20px;
+    h3 {
+        padding-left: 3%;
+        font-size: 16px;
+        line-height: 52px;
+        color: $color;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    ul { 
+        padding: 0 3%;
+    }
+    .ulfirst li { border-bottom: $border;}
+    li {
+        float: left;
+        width: 25%;
+        text-align: center;
+        padding: 20px 0;
+        border-right: $border;
+        line-height: 30px;
+        h4 {
+            font-size: 12px;
+            color: #666;
+        }
+        span {
+            font-size: 24px;
+            color: #111;
+        }
+    }
+    li:last-child { border-right: 0;}
+}
+
+.pubPro-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 90px;
+    background: #e5e5e5;
+    font-size: 24px;
+    color: #111;
+    margin-top: 20px;
+    @include transition;
+    .iconfont { font-size: 24px;}
+}
+.pubPro-btn:hover {
+    background: #dad7d7;
+    color: #111;
+}

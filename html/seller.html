@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商家报名</title>
+<!--bootstrap-s-->
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+<!--bootstrap-e-->
+
+    <link rel="stylesheet" href="../css/component/reset.css">
+    <link rel="stylesheet" href="../css/component/common.css">
+    <link rel="stylesheet" href="../plugins/fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/component/nav.css">
+    <link rel="stylesheet" href="../css/component/footer.css">
+    <link rel="stylesheet" href="../css/seller.css">
+    
+    <script src="../js/component/jquery-1.12.3.min.js"></script>
+<!--bootstrap-s  -->
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script src="../js/hz_sell.js"></script>
+</head>
+<body>
+<header class="nav">
+    <!--    顶部导航-->
+    <div class="nav-top hidden-xs">
+        <div class="nav-topMain container clearfix">
+            <a class="nav-topLeft" href="#">聚乐买首页</a>
+            <ul class="nav-topRight">
+                <li class="log">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </li>
+                <li><a href="#"><i class="iconfont icon-kechengliebiao"></i>我的订单</a></li>
+                <li><a href="#"><i class="iconfont icon-shoucangp"></i>我的收藏</a></li>
+                <li><a href="#"><i class="iconfont icon-kefu"></i>联系客服</a></li>
+            </ul>
+        </div>
+    </div> 
+    
+    <!--    商品导航-->
+   <div class="navbar">
+       <div class="container">
+            <div class="navbar-left"><a class="logo" href="#"><img src="../images/com/logo.png" alt="logo"></a></div>             
+<!--            平板，电脑-->
+            <div class=" nav-r visible-lg">
+                <ul class="clearfix">
+                    <li><a class="cur" href="#">首页</a></li>
+                    <li><a href="#">产品服务</a></li>
+                    <li><a href="#">模式解析</a></li>
+                    <li><a href="#">解决痛点</a></li>
+                    <li><a href="#">推广成效</a></li>
+                    <li><a href="#">平台优势</a></li>
+                    <li><a href="#">费用标准</a></li>
+                    <li><a href="#">活动流程</a></li>
+                </ul>
+                <span class="nav-line"></span>
+            </div>
+            
+<!--            手机-->
+            <div class="navbar-right hidden-lg">
+                <a href="javascript:;" class="navbar-user-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#user_menu"><img class="img-responsive" data-src="holder.js/auto/40x40"></</a>
+                
+                <a href="javascript:;" class="navbar-menu-btn navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#nav_menu"><i class="iconfont icon-kechengliebiao"></i></a>   
+                
+                 <div id="nav_menu" class="collapse navbar-collapse" aria-expanded="false">
+                     <ul class="nav navbar-nav">
+                         <li><a href="#">首页</a></li>
+                         <li><a href="#">最后疯抢</a></li>
+                         <li><a href="#">全场包邮</a></li>
+                         <li><a href="#">最低售价</a></li>
+                         <li><a href="#">商家报名</a></li>
+                     </ul>
+                 </div> 
+                 
+                 <div id="user_menu" class="collapse navbar-collapse" aria-expanded="false">
+                     <ul class="nav navbar-nav">
+                         <li><a href="#">登录</a></li>
+                         <li><a href="#">注册</a></li>
+                         <li><a href="#">我的订单</a></li>
+                         <li><a href="#">我的收藏</a></li>
+                         <li><a href="#">联系客服</a></li>
+                     </ul>
+                 </div>
+            </div>
+       </div>
+   </div>
+</header>
+<!--header-e    -->  
+
+ 
+<!--    首页-->
+    <div class="index-main sell">
+        <div class="index-banner"><img src="../images/seller/seller_banner.jpg"></div>
+        <div class="index-info">
+            <ul class="index-circle clearfix">
+                <li>
+                    <i class="index-point"></i>
+                    <i class="index-add"></i>
+                    <dl>
+                        <dt>想要提升销量和<br>搜索排名？</dt>
+                        <dd><img src="../images/seller/sell_1.png"></dd>
+                    </dl>
+                </li>
+                <span class="sell-add"></span>
+                <li>
+                    <i class="index-point"></i>
+                    <i class="index-add"></i>
+                    <dl>
+                        <dt>想要提升店铺<br>转化率？</dt>
+                        <dd><img src="../images/seller/sell_2.png"></dd>
+                    </dl>
+                </li>
+                <span class="sell-add"></span>
+                <li>
+                    <i class="index-point"></i>
+                    <i class="index-add"></i>
+                    <dl>
+                        <dt>想要达到精准<br>营销推广？</dt>
+                        <dd><img src="../images/seller/sell_3.png"></dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="index-word">
+                <h4 class="index-tit">来<img src="../images/seller/name.png" width="88">返现营销平台</h4>
+                <p class="index-ad">生意为什么难做？你想提高搜索排名吗？你想提高买家喜爱度吗？你想顺利通过活动报名吗？你想让商品看上去图文并茂吗？<br>你想为商品带来更多流量吗？你想让新品快速积累基础销量，赢在起跑线吗？
+
+                </p>
+                <p class="index-line"><i></i></p>
+                <p class="index-tips">郑重承诺：我们是电子商务体验营销的领跑者，我们将一一为您解决！</p>
+            </div>
+            <a href="javascript:;" class="to-next"><i class="iconfont icon-xiangxia"></i></a>
+            <p class="index-service"><img src="../images/seller/logo.png" width="60"></p>
+        </div>
+    </div>
+    
+<!--    提升权重-->
+    <div class="weight-main sell">
+        <h2 class="sec-tit weight-sec-tit"><img src="images/6.png"></h2>
+        <div class="weight-area">
+            <ul class="clearfix">
+                <li class="weight-l">
+                    <div class="weight-list">
+                        <a href="javascript:;" class="weight-icon iconfont icon-xiaolvdashiicon02-copy"></a>
+                        <div class="weight-txt"> 
+                            <h4><i>01</i><span>点击搜索率</span></h4>  
+                            <p>试客搜索关键词进店，提升搜索点击率</p>
+                        </div>
+                    </div>
+                    <div class="weight-list">
+                        <a href="javascript:;" class="weight-icon iconfont icon-gengxinpaiming"></a>
+                        <div class="weight-txt">  
+                            <h4><i>03</i><span>搜索排名</span></h4>  
+                            <p>试客完成<i>收藏商品和店铺、加入购物车</i>，提升搜索排名</p>
+                        </div>
+                    </div>
+                    <div class="weight-list">
+                        <a href="javascript:;" class="weight-icon iconfont icon-gupiaoweixuanzhong"></a> 
+                        <div class="weight-txt"> 
+                            <h4><i>05</i><span>动销率</span></h4>  
+                            <p>多款商品发布试用任务，优化店铺动销率</p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="weight-r">
+                    <div class="weight-list">
+                        <a href="javascript:;" class="weight-icon iconfont icon-xiefang"></a> 
+                        <div class="weight-txt"> 
+                            <h4><i>02</i><span>重复访问率</span></h4>  
+                            <p>试客连续进店浏览，优化重复访问率</p>
+                        </div>
+                    </div>
+                    <div class="weight-list">
+                        <a href="javascript:;" class="weight-icon iconfont icon-zan"></a> 
+                        <div class="weight-txt"> 
+                            <h4><i>04</i><span>重复访问率</span></h4>  
+                            <p>试客完成好评真人秀，<i>提升商品评价质量</i></p>
+                        </div>
+                    </div>
+                    <div class="weight-list">
+                        <a href="javascript:;" class="weight-icon iconfont icon-xiaoliang"></a> 
+                        <div class="weight-txt"> 
+                            <h4><i>06</i><span>销量权重</span></h4>  
+                            <p>获奖试客需到店铺下单领取，提升销量权重</p>
+                        </div>
+                    </div> 
+                </li>
+                
+                <li class="weight-b">
+                    <div class="weight-list">
+                        <a href="javascript:;" class="weight-icon iconfont icon-tongguo"></a> 
+                        <div class="weight-txt"> 
+                            <h4><i>07</i><span>报名通过率</span></h4>  
+                            <p>提升<i>买家喜爱度</i>大大提高淘宝活动通过率</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+            <div class="weight-show">
+                <div class="weight-diamond"></div>
+                <div class="weight-circle"></div>
+                <div class="weight-change">
+                    <span><i class="iconfont icon-xiaolvdashiicon02-copy"></i></span>
+                    <h4>提升搜索点击率</h4>
+                    <i class="weight-show-line"></i>
+                </div>
+            </div>
+        </div>
+        
+        <a href="javascript:;" class="to-next"></a>
+    </div>
+    
+<!--    试用买家秀-->
+    <div class="buyer-main sell">
+        <h2 class="sec-tit buyer-sec-tit"><img src="images/8.png"></h2>
+        <h4 class="buyer-tips">真实<i></i>全面<i></i>实拍<i></i>原创 </h4> 
+        <p class="buyer-intro">现在淘宝里用户在查看宝贝时，就是<i>“晒图”+“首个评论”</i>的展示 。淘宝把第一屏这么宝贵的板块给了宝贝<br>
+            评价，可见淘宝对评价的重视，也就是消费者对评价的重视。我们致力为您的<i>打造图文并茂的商品</i>。</p>   
+        <ul class="buyer-pics clearfix">
+            <li class="buyer-pic-1"><img src="images/9.png"></li>
+            <li class="buyer-pic-2"><img src="images/10.jpg"></li>
+            <li class="buyer-pic-3"><img src="images/11.jpg"></li>
+            <li class="buyer-pic-4"><img src="images/12.jpg"></li>
+        </ul>
+        
+        <a href="javascript:;" class="to-next"></a>
+    </div>
+    
+<!--    商家发布任务流程-->
+    <div class="seller-main sell">
+        <h2 class="sec-tit seller-sec-tit"><img src="images/13.png"></h2>
+        <p class="seller-tips">
+            <span class="seller-tips-ch"><i class="seller-dot-ex"></i>商家发布任务流程操作<b>简单便捷</b>，审核试客及给试客返款<b>均由我们平台代为处理</b>。</span><br>
+            <span class="seller-tips-en">Simple and convenient, and to test the rebate audit testing by the platform for treatment.<i class="seller-dot-for"></i></span>
+        </p>
+        <div class="seller-point">
+            <span class="seller-s"></span>
+            <span class="seller-m"></span>
+            <span class="seller-l"></span>
+        </div>
+        
+        <ul class="seller-course clearfix">
+            <li class="seller-course-1">
+                <i class="seller-icon iconfont icon-huiyuan"></i>
+                <a href="javascript:;"></a>  
+                <h5>注册会员</h5>
+                <p>Registered member</p>      
+            </li>
+            <span class="seller-to-r"><i>></i></span>
+            <li class="seller-course-2">
+                <i class="seller-icon iconfont icon-stroe"></i>
+                <a href="javascript:;"></a>  
+                <h5>绑定店铺</h5>
+                <p>Bind shop</p>      
+            </li>
+            <span class="seller-to-r"><i>></i></span>
+            <li class="seller-course-3">
+                <i class="seller-icon iconfont icon-renwu"></i>
+                <a href="javascript:;"></a>  
+                <h5>发布试用任务</h5>
+                <p>Release trial mission</p>      
+            </li>
+            <span class="seller-to-r"><i>></i></span>
+            <li class="seller-course-4">
+                <i class="seller-icon iconfont icon-qianbao"></i>
+                <a href="javascript:;"></a>  
+                <h5>确认试客付款金额</h5>
+                <p>customer payment</p>      
+            </li>
+            <span class="seller-to-r"><i>></i></span>
+            <li class="seller-course-5">
+                <i class="seller-icon iconfont icon-pingjia"></i>
+                <a href="javascript:;"></a>  
+                <h5>确认试客评价</h5>
+                <p>customer evaluation</p>      
+            </li>
+        </ul>
+        
+        <a href="javascript:;" class="to-next"></a>
+    </div>
+<!--    常见问题-->
+    <div class="ques-main sell">        
+         <h2 class="sec-tit ques-sec-tit"><img src="images/14.png"></h2>
+         <ul class="ques-detail">
+             <li>
+                 <div class="ques-q">
+                     <span>Q</span>
+                     <p>你们如何收费？</p>
+                 </div>
+                 <div class="ques-a">
+                     <span>A</span>
+                     <p>答：2680元/年/店铺，全年可在平台不限次数的发布试用任务。</p>
+                 </div>
+             </li>
+             <li>
+                 <div class="ques-q">
+                     <span>Q</span>
+                     <p>你们支持哪些发布渠道？</p>
+                 </div>
+                 <div class="ques-a">
+                     <span>A</span>
+                     <p>答：支持的发布渠道有自然搜索渠道、手机APP渠道、淘宝U站渠道、淘金币渠道、新浪微博渠道、QQ空间渠道。</p>
+                 </div>
+             </li>
+             <li>
+                 <div class="ques-q">
+                     <span>Q</span>
+                     <p>你们平台的一个ID最多可以绑定几个店铺？</p>
+                 </div>
+                 <div class="ques-a">
+                     <span>A</span>
+                     <p>答：一个帐号最多可绑定6个店铺，新增店铺只需要1元/天，淘宝、天猫、京东各可以绑定多个店铺。</p>
+                 </div>
+             </li>
+             <li>
+                 <div class="ques-q">
+                     <span>Q</span>
+                     <p>你们支持哪些电商平台啊？</p>
+                 </div>
+                 <div class="ques-a">
+                     <span>A</span>
+                     <p>答：我们95%的会员都是付费会员，试客申请试用任务前，需绑定买号信息并通过平台审核后，方可申请绑定买号的要求：①淘宝买号2心信誉以上；②注册时长1个月以上；③通过支付宝实名认证；④1人1号，需添加身份证信息的验证。杜绝一切小号或危险账号，申请商家的试用任务，买号安全性可以得到保障。</p>
+                 </div>
+             </li>
+             <li>
+                 <div class="ques-q">
+                     <span>Q</span>
+                     <p>那么多试用平台，为什么要跟你们合作？</p>
+                 </div>
+                 <div class="ques-a">
+                     <span>A</span>
+                     <p>答：我们的试用模式绝对是国内独一无二的，其他试用平台试客申请流程简单，申请人数即使再多，不进店收藏、加购物车、重复访问，对您来说毫无帮助，权重得不到提升不说，商品还很容易被降权。</p>
+                 </div>
+             </li>
+         </ul>
+         
+         <div class="ques-btn clearfix">
+             <a class="free-btn" href="http://sell.huizhe.com/register" target="_blank">商家免费体验</a>
+             <a class="kefu-btn" href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAxMDA0Nl8yMjAwOThfNDAwODMzMzk0OV8yXw" target="_blank">联系商家客服</a>
+         </div>
+    </div>
+
+
+<div class="float-nav">
+    <ul>
+        <li><a class="iconfont icon-kefu" href="http://kefu.qycn.com/vclient/chat/?websiteid=111834&groupid=38974/" target="_blank"></a></li>
+        <li><a class="iconfont icon-diannao" href="http://sell.huizhe.com/register/" target="_blank"></a></li>
+        <li class="to-top"><a class="iconfont icon-dingbu" href="javascript:;"></a></li>
+    </ul>
+</div> 
+</body>
+</html>

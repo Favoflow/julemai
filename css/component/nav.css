@@ -152,6 +152,46 @@
 .navright-list li a span {
   float: left; }
 
+.log-user {
+  position: relative; }
+  .log-user .username {
+    display: inline-block; }
+    .log-user .username span {
+      float: left;
+      max-width: 70px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+    .log-user .username .iconfont {
+      float: left;
+      margin-right: 0;
+      line-height: 16px;
+      margin-left: 8px; }
+  .log-user dl {
+    display: none;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 100; }
+  .log-user dd a {
+    display: block;
+    line-height: 32px;
+    background: #404040;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer; }
+    .log-user dd a .iconfont {
+      margin-right: 0; }
+  .log-user dd a:hover {
+    background: #4d4d4d; }
+
+.log-user:hover dl {
+  display: block; }
+
 .navbar-main {
   position: relative; }
 

@@ -133,6 +133,45 @@
 }
 
 
+//已登录状态
+.log-user {
+    position: relative;
+    .username {
+        display: inline-block;
+        span {
+            float: left;
+            max-width: 70px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .iconfont { 
+            float: left;
+            margin-right: 0;
+            line-height: 16px;
+            margin-left: 8px;
+        }
+    }
+    dl {
+        display: none;
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 100;
+    }
+    dd a {
+        display: block;
+        line-height: 32px;
+        background: #404040;
+        @include transition;
+        cursor: pointer;
+        .iconfont { margin-right: 0;}
+    }
+    dd a:hover { background: #4d4d4d;}
+}
+.log-user:hover dl { display: block;}
 
 
 

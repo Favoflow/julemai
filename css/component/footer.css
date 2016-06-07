@@ -67,4 +67,44 @@
   font-size: 12px;
   color: #999; }
 
+.foot-wechat {
+  position: relative; }
+
+.foot-wechat:hover .follow-wechat {
+  display: block; }
+
+.follow-wechat {
+  display: none;
+  position: absolute;
+  bottom: 40px;
+  left: -58px;
+  width: 162px;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #ccc;
+  text-align: center;
+  z-index: 100; }
+  .follow-wechat img {
+    width: 100%; }
+  .follow-wechat p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 8px; }
+  .follow-wechat span {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    color: #999;
+    margin-top: 10px; }
+  .follow-wechat .arrow-down {
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -11px;
+    width: 22px;
+    height: 12px;
+    background: url(../../images/about/arrow_down.png) no-repeat center;
+    background-size: contain; }
+
 /*# sourceMappingURL=footer.css.map */

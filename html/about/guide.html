@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新手指导</title>
+    
+    <link rel="stylesheet" href="../../css/component/reset.css">
+    <link rel="stylesheet" href="../../css/guide.css">
+    <script src="../../js/component/jquery-1.12.3.min.js"></script>
+    <script src="../../js/component/base.js"></script>
+</head>
+<body>
+    <div class="guide">
+        <ul>
+            <li class="guide-1">
+                <img src="../../images/about/guide1.jpg">
+                <a class="arrow-down" href="javascript:;"></a>
+            </li>
+            <li class="guide-2">
+                <img src="../../images/about/guide2.jpg">
+                <a class="arrow-down" href="javascript:;"></a>
+            </li>
+            <li class="guide-3">
+                <img src="../../images/about/guide3.jpg">
+                <a class="arrow-down" href="javascript:;"></a>
+            </li>
+            <li class="guide-4">
+                <img src="../../images/about/guide4.jpg">
+                <a class="arrow-down" href="javascript:;"></a>
+            </li>
+            <li class="guide-5">
+                <img src="../../images/about/guide5.jpg">
+                <a class="arrow-down" href="javascript:;"></a>
+            </li>
+            <li class="guide-6"><img src="../../images/about/guide6.jpg"></li>
+            <li class="guide-7"><a class="to-index"></a><img src="../../images/about/guide7.jpg"></li>
+        </ul>
+    </div>   
+<script>
+var guide = {
+    guidePos: function(obj){
+        var _index = obj.index('.arrow-down'),
+            _scroll = base.getPos($('.guide li')[_index+1]).t;
+        $('html,body').animate({'scrollTop':_scroll},300);
+        
+    }
+}
+
+$(function(){
+    $('.arrow-down').on('click',function(){
+       guide.guidePos($(this)); 
+    });
+})
+</script> 
+</body>
+</html>

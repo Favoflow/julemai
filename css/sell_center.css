@@ -1,0 +1,146 @@
+.center-top {
+  width: 100%;
+  padding: 22px 0;
+  background: #fff; }
+
+.center-order-type {
+  margin-top: 20px;
+  background: #fff;
+  padding-bottom: 20px; }
+  .center-order-type h3 {
+    padding-left: 3%;
+    font-size: 16px;
+    line-height: 52px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px; }
+  .center-order-type li {
+    float: left;
+    width: 33%;
+    text-align: center; }
+  .center-order-type .iconfont {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: #fffad8;
+    border: 1px solid #ffe100;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    color: #ffe100; }
+  .center-order-type h4 {
+    margin-top: 12px;
+    color: #333;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center; }
+    .center-order-type h4 em {
+      color: #ff6600; }
+
+.center-money-info {
+  width: 100%;
+  padding: 30px 0;
+  background: #fff; }
+  .center-money-info li {
+    float: left;
+    width: 33%;
+    line-height: 20px;
+    height: 60px;
+    border-right: 1px solid #e5e5e5;
+    color: #333;
+    padding: 0 3%; }
+  .center-money-info li:last-child {
+    border: none; }
+  .center-money-info h4 {
+    line-height: 28px; }
+  .center-money-info li span {
+    display: block;
+    line-height: 32px; }
+  .center-money-info li .price i {
+    font-size: 22px; }
+  .center-money-info .center-money-rest {
+    position: relative; }
+  .center-money-info .center-money-rest .price {
+    float: left;
+    color: #ff7200; }
+  .center-money-info .center-money-dong .price {
+    color: #00c0ff; }
+  .center-money-info .center-money-fan .price {
+    color: #ffe100; }
+  .center-money-info .center-money-save .price {
+    color: #333; }
+  .center-money-info .top-btn {
+    float: left;
+    width: 50px;
+    height: 22px;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 22px;
+    text-align: center;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    border-radius: 11px; }
+  .center-money-info .recharge {
+    background: #ffe100; }
+  .center-money-info .withdraw {
+    background: #111;
+    color: #fff; }
+
+.center-pro-type {
+  margin-top: 20px;
+  background: #fff;
+  padding-bottom: 20px; }
+  .center-pro-type h3 {
+    padding-left: 3%;
+    font-size: 16px;
+    line-height: 52px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px; }
+  .center-pro-type ul {
+    padding: 0 3%; }
+  .center-pro-type .ulfirst li {
+    border-bottom: 1px solid #e5e5e5; }
+  .center-pro-type li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 20px 0;
+    border-right: 1px solid #e5e5e5;
+    line-height: 30px; }
+    .center-pro-type li h4 {
+      font-size: 12px;
+      color: #666; }
+    .center-pro-type li span {
+      font-size: 24px;
+      color: #111; }
+  .center-pro-type li:last-child {
+    border-right: 0; }
+
+.pubPro-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 90px;
+  background: #e5e5e5;
+  font-size: 24px;
+  color: #111;
+  margin-top: 20px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s; }
+  .pubPro-btn .iconfont {
+    font-size: 24px; }
+
+.pubPro-btn:hover {
+  background: #dad7d7;
+  color: #111; }
+
+/*# sourceMappingURL=sell_center.css.map */
