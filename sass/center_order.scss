@@ -117,3 +117,40 @@
         }
     }
 }
+
+.fix-order-alert {
+    li:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+    li {
+        line-height: 34px;
+        span {
+            float: left;
+        }
+    }
+    li label {
+        float: left;
+        width: 65px;
+        font-weight: 400;
+    }
+    .form-control {
+        float: left;
+        width: auto;
+        height: 34px;
+        line-height: 34px;
+    }
+}
+
+.write-order-alert {
+    .form-control {
+        height: 34px;
+        line-height: 34px;
+        margin: 20px 0 10px;
+    }
+    .tips { margin-bottom: 10px;}
+    .img-area img {
+        width: 400px;
+    }
+}

@@ -2,6 +2,12 @@
 @import "base";
 
 
+//boos重置
+.help-block { 
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 //文字溢出隐藏
 .textOver {
     width: 100%;
@@ -118,6 +124,11 @@
     text-align: center;
 }
 //表单
+.form-group:after {
+    display: block;
+    clear: both;
+    content: "";
+}
 .form-group { 
     padding-bottom: 20px;
     margin-bottom: 0;
@@ -184,6 +195,7 @@
     position: relative;
     background: #f8f8f8;
     border: $border;
+    border-radius: 4px;
     select{
         width: 100%;
         -webkit-appearance: none;
@@ -208,6 +220,26 @@
     }
 }
 
+
+//radio/checkbox
+.form-radio:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.form-radio,.form-checkbox {
+    input {float: left;}
+    label {
+        float: left;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+        padding-left: 10px;
+        line-height: 36px;
+    }
+}
+.form-radio input { margin-top: 10px;}
+.form-checkbox input { margin-top: 11px;}
 //textarea
 .form-textarea { 
     resize: none;
@@ -260,23 +292,27 @@
 .iconfont { font-size: 14px;}
 .icon-zhifubao { color: #3497ff;}
 .icon-yinxingqia { color: $baseColor;}
-.icon-zhongguoyinxing { color: #ae1617;}
-.icon-jiaotongyinxing { color: #1b308b;}
-.icon-gongshangyinxing { color: #f0383b;}
-.icon-pufa { color: #0a6cbb;}
-.icon-youzheng { color: #368157;}
-.icon-minshengyinxing { color: #3a9f79;}
-.icon-jiansheyinxing { color: #0155b9;}
-.icon-guangfayinxing { color: #d40417;}
-.icon-icon0201fuben30 {color: #fcc329; }
-.icon-zhaoshangyinxing { color: #e70300;}
-.icon-beijingyinxing { color: #f13233;}
-.icon-zhongxinyinxing { color: #d81b17;}
-.icon-guangdayinxing { color: #e7cf2c;}
-.icon-nongyeyinxing { color: #329d6b;}
-.icon-pinganyinxingsolid { color: #eb6434;}
-.icon-xingyeyinxing { color: #031f9a;}
+.icon-01040000 { color: #ae1617;}//中国银行
+.icon-03010000 { color: #1b308b;}//交通银行
+.icon-01020000 { color: #f0383b;}//工商银行
+.icon-03100000 { color: #0a6cbb;}//浦发银行
+.icon-01000000 { color: #368157;}//邮政储蓄
+.icon-03050000 { color: #3a9f79;}//民生银行
+.icon-01050000 { color: #0155b9;}//建设银行
+.icon-03060000 { color: #d40417;}//广发银行
+.icon-04083320 {color: #fcc329; }//宁波银行
+.icon-03080000 { color: #e70300;}//招商银行
+.icon-04031000 { color: #f13233;}//北京银行
+.icon-03020000 { color: #d81b17;}//中信银行
+.icon-03030000 { color: #e7cf2c;}//光大银行
+.icon-01030000 { color: #329d6b;}//农业银行
+.icon-03070000 { color: #eb6434;}//平安银行
+.icon-03090000 { color: #031f9a;}//兴业银行
 
+.icon-weixin { color: #60c52e;}
+.icon-weibo { color: #f64f5b;}
+.icon-qq { color: #5b9bf2;}
+.icon-qzone { color: #ffaf23;}
 
 //弹窗
 .alert-bg {
@@ -355,20 +391,25 @@
         color: #fff;
     }
 }
+.alert-tit {
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    line-height: 56px;
+    border-bottom: $border;
+}
 
 
 //等级
-.level:after { 
-    display: block;
-    clear: both;
-    content: '';
-}
 .level {
+    position: relative;
     display: inline-block;
     font-size: 14px;
-    .iconfont { float: left;}
+    padding-right: 4px;
     em {
-        float: left;
-        @include transform(scale(.6,.6));
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @include transform(scale(.5,.5));
     }
 }

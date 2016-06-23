@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import "base";
+
+.pub {
+    background: #fff;
+    padding: 0 3% 60px;
+    h2 {
+        font-size: 18px;
+        color: $color;
+        border-bottom: $border;
+        line-height: 80px;
+        margin-bottom: 40px;
+    }
+    .form-left {
+        float: left;
+        text-align: left;
+        font-size: 14px;
+        line-height: 36px;
+        color: #333;
+    }
+    .form-right {
+        float: left; 
+    }
+    .form-tt {
+        padding-top: 6px;
+        font-size: 14px;
+        color: #333;
+        line-height: 24px;
+    }
+    .form-group { 
+        padding-bottom: 0;
+        margin-bottom: 30px;
+    }
+    .form-radio,.form-checkbox {
+        float: left;
+        margin-right: 30px;
+        label {
+            line-height: 36px;
+        }
+    }
+    
+    .form-select {
+        float: left;
+        width: 150px;
+        line-height: 34px;
+        padding: 0 10px;
+        margin-right: 13px;
+    }
+    .form-control {
+        line-height: 36px;
+        height: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-radius: 6px;
+    }
+    .form-upload {
+        position: relative;
+        padding: 0;
+        border: none;
+        .tips {
+          display: block;
+          font-size: 12px;
+          color: #999;
+          line-height: 34px;
+          padding: 0;
+        }
+    }
+    .money-input:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+    .money-input {
+        float: left;
+        line-height: 36px;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+        width: 170px;
+        input {
+          float: left;
+          width: 135px;
+          padding: 0 5px;
+          background: #fff;
+        }
+        span {
+          float: left;
+          width: 32px;
+          background: #f8f8f8;
+          text-align: center;
+          font-size: 12px;
+          border-left: 1px solid #e5e5e5;
+        }
+    }
+    .money-tips {
+        float: left;
+        margin-left: 20px;
+        font-size: 12px;
+        color: #999;
+        line-height: 36px;
+        i { margin-right: 6px;}
+    }
+    .wait-count {
+        float: left;
+        line-height: 36px;
+        font-size: 14px;
+        color: #bbb;
+    }
+    .form-btn {
+        float: right;
+        button {
+            float: left;
+            border-radius: 4px;
+            width: 180px;
+            margin-right: 20px;
+        }
+    }
+}

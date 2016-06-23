@@ -96,6 +96,6 @@ window.onload = file_click;
 
 $(function(){
     $('.delete').on('click',function(){
-        $('#imgShow_WU_FILE_0').attr('src','');
+        $('#imgShow_WU_FILE_0').removeAttr('src');
     })
 });

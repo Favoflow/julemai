@@ -344,5 +344,51 @@
     </div>
 </footer>
 <!--footer-e-->
+
+<!--弹窗-->
+<div class="alert-bg">
+    <div class="alert-main">
+        
+<!--        修改单号-->
+        <div class="fix-order-alert alert-content" style="display:none;">
+            <a href="javascript:;" class="alert-close"><i class="iconfont icon-guanbi"></i></a>
+            <h3 class="alert-tit">修改单号</h3>
+            <ul>
+                <li>
+                    <label>已填单号</label>
+                    <span>1910367858783953</span>
+                </li>
+                <li>
+                    <label>修改单号</label>
+                    <input type="text" class="form-control">
+                </li>
+            </ul>
+        </div>
+        
+<!--        填写单号-->
+        <div class="alert-content write-order-alert" style="display:none;">
+            <a href="javascript:;" class="alert-close"><i class="iconfont icon-guanbi"></i></a>
+            <h3 class="alert-tit">填写单号</h3> 
+            <input class="form-control" type="text" placeholder="填写已下单并付款的订单号"> 
+            <p class="tips orange">注：禁止填写虚假单号或未付款单号，违规者冻结账户资金</p>  
+            
+            <p class="img-area"><img class="img-responsive" src="../../images/order.png"></p>
+            <div class="alert-btn clearfix">
+                <a class="alert-s" href="javascript:;">确定</a>
+                <a class="alert-c" href="javascript:;">取消</a>
+            </div>    
+        </div>
+        
+<!--        删除订单-->
+        <div class="alert-content delete-order-alert" style="display:none;">
+            <h4>确认删除?</h4> 
+            <p>订单删除后无法恢复</p>
+            <div class="alert-btn clearfix">
+                <a class="alert-s" href="javascript:;">确定</a>
+                <a class="alert-c" href="javascript:;">取消</a>
+            </div>    
+        </div>
+    </div>    
+</div>
 </body>
 </html>

@@ -19,9 +19,6 @@
     }
 }
 .index-main .to-next { bottom: 122px;}
-.weight-main .to-next { bottom: 40px;}
-.buyer-main .to-next { bottom: 20px;}
-.seller-main .to-next { bottom: 30px;}
 @-webkit-keyframes arrowMove {
     50% {
         -webkit-transform: translateY(16px);
@@ -82,8 +79,16 @@
 .sec-tit {
     height: 140px;
     text-align: center;
+    img {
+        width: 395px;
+    }
 }
 
+.model-main { 
+    padding-bottom: 130px;
+    background: url(../images/seller/2.png) center bottom #f7f7f7 no-repeat;
+    background-size: auto 65px;
+}
 /*导航*/
 .nav {
     position: fixed;
@@ -161,7 +166,7 @@
 
 /*首页*/
 .index-main {
-    padding: 90px 0 36px 0;
+    padding: 122px 0 36px 0;
 }
 .index-banner {
     width: 100%;
@@ -280,234 +285,103 @@
 }
 .index-service img { margin: 0 5px;}
 
-/*提升权重*/
-.weight-main {
-    width: 100%;
-    padding: 34px 0 150px 0;
-    background: url(../images/7.png) no-repeat bottom center #f1f5f7;
-}
-.weight-area {
-    position: relative;
-    width: 980px;
-    margin: 0 auto;
-}
-.weight-l {
-    float: left;
-}
-.weight-r {
-    float: right;
-}
-.weight-list {
-    width: 290px;
-    height: 68px;
-    padding: 60px 0;
-    border-bottom: 1px solid #e6e6e6;
-    cursor: pointer;
-}
-.weight-list:last-child { border-bottom: none;}
-.weight-icon {
-    float: left;
-    width: 66px;
-    height: 66px;
-    text-align: center;
-    font-size: 32px;
-    line-height: 66px;
-    color: #52ba5f;
-    border: 1px solid #35af44;
-    border-radius: 50%;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-.weight-list:hover .weight-icon { 
-    background: #35af44;
-    color: #fff;
-}
-.weight-txt {
-    float: left;
-    margin-left: 20px;
-    width: 202px;
-}
-.weight-txt h4 {
-    font-size: 18px;
-    line-height: 30px;
-    color: #404040;
-}
-.weight-txt h4 i {
-    font-style: italic;
-    font-size: 26px;
-    margin-right: 4px;
-}
-.weight-txt p {
-    font-size: 14px;
-    color: #737373;
-    line-height: 18px;
-}
-.weight-b {
-    position: absolute;
-    bottom: -90px;
-    left: 50%;
-    margin-left: -145px;
-    border-bottom: none;
-}
-.weight-show {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -127px 0 0 -127px;
-    width: 254px;
-    height: 254px;
-}
-.weight-circle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 254px;
-    height: 254px;
-    border: 1px dotted #94d29f;
-    border-radius: 50%;
-}
-.weight-diamond {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    width: 214px;
-    height: 214px;
-    border: 1px dotted #94d29f;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
 
-.weight-change {
-    height: 148px;
-    margin: 53px 0;
-    text-align: center;
-}
-.weight-change span {
-    display: block;
-    width: 76px;
-    height: 76px;
-    padding: 8px;
-    border-radius: 50%;
-    margin: 0 auto;
-    color: #fff;
-    background: rgba(251,165,0,0.2);
-}
-.weight-change span i {
-    display: block;
-    width: 76px;
-    height: 76px;
-    font-size: 40px;
-    line-height: 76px;
-    border-radius: 50%;
-    background: #fba500;
-}
-.weight-change h4 {
-    font-size: 18px;
-    line-height: 54px;
-    color: #fba500;
-}
-.weight-show-line {
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: #fba500;
-    margin: 0 auto;
-}
-
-
-/*试用买家秀*/
-.buyer-main { padding-bottom: 60px;}
-.buyer-sec-tit {
+//解决四大问题
+.solv-main { padding-bottom: 90px;}
+.solv-sec-tit {
     width: 100%;
     height: 180px;
-    background: url(../images/buyer_bg.png) repeat-x; 
+    background: url(../images/seller/tiaowen.png) repeat-x;
+    background-size: auto 200px;
+    margin-bottom: 96px;
 }
-.buyer-tips {
-    margin-top: 22px;
-    font-size: 20px;
-    line-height: 92px;
-    color: #35af44;
+.solv-sec-tit img {
+    width: 1380px;
+    max-width: 100%;
+}
+
+
+//三大成效
+.achieve-main { 
+    padding-bottom: 100px;
+    background: #f7f7f7;
+}
+.achieve-main li:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.achieve-main li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background:#fff;
+    margin-top: 30px;
+    border: 1px solid #e5e5e5;    
+}
+.ach-pic { 
+    padding: 20px 0;
+    width: 50%;
     text-align: center;
+    img {
+        width: auto;
+        height: 200px;
+    }
 }
-.buyer-tips i {
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    background: #35AF44;
-    border-radius: 50%;
-    margin: 4px 10px;
-}
-.buyer-intro {
-    font-size: 14px;
-    line-height: 22px;
-    color: #4c4c4c;
-    text-align: center;
-}
-.buyer-intro i { color: #fba500;}
-
-.buyer-pics {
-    width: 980px;
-    margin: 50px auto 0;
-}
-.buyer-pics li {
-    float: left;
-    width: 232px;
-    height: 332px;
-    overflow: hidden;
-    margin-right: 16px;
-    cursor: pointer;
-}
-.buyer-pics img {
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-.buyer-pics li:last-child { margin-right: 0;}
-.buyer-pics li:hover img {
-    -webkit-transform: scale(1.1,1.1);
-    -moz-transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1);
-    transform: scale(1.1,1.1);
-}
-.buyer-pic-1,.buyer-pic-3 { 
-    margin-top: 36px;
+.ach-cont { 
+    width: 50%;
+    h4 {
+        font-size: 22px;
+        line-height: 60px;
+        color: $color;
+        border-bottom: $border;
+        margin-bottom: 16px;
+    }
+    p {
+        line-height: 30px;
+        font-size: 16px;
+        color: #666;
+    }
 }
 
+.achieve-main .a-left { float: left;}
+.achieve-main .a-right { float: right;}
+.achieve-main .pl-95 { padding-left: 95px;}
+.achieve-main .pr-95 { padding-right: 95px;}
 
-/*商家发布任务流程*/
-.seller-main {
-    width: 100%;
-    padding: 47px 0 80px 0;
-    background: #f1f5f7;
-    text-align: center;
+
+//平台优势
+.advantage-main {
+    padding-bottom: 70px;
+    .adv-pic {
+        text-align: center;
+        img {width: 60%;}
+    }  
+    li {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    h4 {
+        text-align: center;
+        font-size: 18px;
+        color: #272636;
+        line-height: 32px;
+        margin: 27px 0 18px;
+    }
+    p { 
+        line-height: 30px;
+        color: #666;
+        font-size: 14px;
+    }
 }
 
+//0服务费
 .seller-tips {
     position: relative;
-    padding-top: 20px;
+    text-align: center;
 }
-.seller-tips b { 
-    color: #fba500;
-    font-weight: 400;
-}
-.seller-tips span { 
-    position: relative;
-    display: inline-block;
-}
-.seller-tips-ch {
-    font-size: 14px;
-    color: #4c4c4c;
-    line-height: 28px;
-}
-.seller-tips-en {
-    font-size: 12px;
-    color: #808080;
-    line-height: 28px;
+.seller-tips span {
+  position: relative;
+  display: inline-block;
 }
 .seller-dot-ex {
     position: absolute;
@@ -515,172 +389,38 @@
     left: -80px;
     width: 20px;
     height: 20px;
-    background: url(../images/dot.png) no-repeat center;
+    background: url(../images/seller/dot.png) no-repeat center;
+    background-size: 16px;
 }
 .seller-dot-for {
     position: absolute;
-    bottom: -10px;
-    right: -80px;
+    bottom: 5px;
+    right: -160px;
     width: 20px;
     height: 20px;
-    background: url(../images/dot.png) no-repeat center;
+    background: url(../images/seller/dot.png) no-repeat center;
+    background-size: 16px;
     -webkit-transform: rotateZ(180deg);
     -moz-transform: rotateZ(180deg);
     -ms-transform: rotateZ(180deg);
     transform: rotateZ(180deg);
 }
-.seller-point {
-    width: 80px;
-    margin: 26px auto 0;
-}
-.seller-point span {
-    display: block;
-    margin: 0 auto 8px;
-    border-radius: 50%;
-}
-.seller-s {
-    width: 8px;
-    height: 8px;
-    background: rgba(54,175,68,.3);
-}
-.seller-m {
-    width: 16px;
-    height: 16px;
-    background: rgba(54,175,68,.55);
-}
-.seller-l {
-    width: 28px;
-    height: 28px;
-    background: url(../images/arrow_down.png) no-repeat center #35af44;
-}
-.seller-course {
-    width: 980px;
-    margin: 32px auto 0;
-}
-.seller-course li {
-    position: relative;
-    float: left;
-    width: 132px;
-    cursor: pointer;
-}
-.seller-icon {
-    position: absolute;
-    top: 12px;
-    left: 45px;
-    font-size: 42px;
-    color: #35af44;
-    z-index: 10;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-.seller-course li a {
-    display: block;
-    width: 90px;
-    height: 90px;
-    margin: 0 0 18px 20px;
-    font-size: 44px;
-    text-align: center;
-    border: 1px solid #35af44;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-.seller-course li:hover .seller-icon { color: #fff;}
-.seller-course li:hover a { background: #35af44;}
-.seller-course li:hover h5, .seller-course li:hover p { color: #35af44;}
-.seller-course h5 {
-    margin-top: 30px;
-    line-height: 28px;
-    font-size: 16px;
-    color: #333;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-.seller-course p {
-    font-size: 10px;
-    color: #333;
-    line-height: 20px;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
-}
-.seller-to-r {
-    position: relative;
-    float: left;
-    width: 80px;
-    height: 1px;
-    margin-top: 45px;
-    background: #35af44;
-}
-.seller-to-r i {
-    position: absolute;
-    top: -9px;
-    left: 50%;
-    margin-left: -9px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    border: 1px solid #35af44;
-    font-size: 14px;
-    text-align: center;
-    line-height: 18px;
-    color: #35af44;
-    background: #f1f5f7;
+.service-main {
+    padding-bottom: 130px;
+    background: url(../images/seller/2.png) center bottom #f7f7f7 no-repeat;
+    background-size: auto 65px;
+    .seller-tips-ch {
+        font-size: 24px;
+        color: #272636;
+        line-height: 60px;
+    }
+    .seller-tips-en {
+        font-size: 26px;
+        color: #ff9000;
+        line-height: 70px;
+    }
 }
 
-
-/*常见问题*/
-.ques-main {
-    width: 100%;
-    padding: 40px 0 127px 0;
-    background: url(../images/15.png) no-repeat bottom center;
-}
-.ques-detail  {
-    width: 980px;
-    margin: 0 auto;
-    padding-bottom: 142px;
-}
-.ques-detail li {
-    display: block;
-    padding: 20px 0 20px 20px;
-    border-bottom: 1px dashed #e5e5e5;
-}
-.ques-q:after,.ques-a:after {
-    display: block;
-    clear: both;
-    content: "";
-}
-.ques-detail span {
-    float: left;
-    width: 20px;
-    height: 20px;
-    border-radius: 2px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    margin: 3px 12px 3px 0;
-}
-.ques-q span { background: #35af44;}
-.ques-a span { background: #fba500;}
-.ques-q p { font-weight: bold; color: #4c4c4c;}
-.ques-a p { color: #616161;}
-.ques-detail p {
-    float: left;
-    width: 920px;
-    font-size: 16px;
-    line-height: 26px;
-}
 .ques-btn {
     width: 540px;
     margin: 0 auto;
@@ -698,18 +438,23 @@
     -ms-transition: all .3s;
     transition: all .3s;
 }
-.free-btn {
+.ques-btn .free-btn {
     float: left;
-    background: #35af44;
+    background: #ffe100;
+    color: #111;
 } 
 .kefu-btn {
     float: right;
-    background: #fba500;
+    background: #313131;
 }
-.free-btn:hover { box-shadow: 0px 0px 15px rgba(53,175,68,.6);}
-.kefu-btn:hover { box-shadow: 0px 0px 15px rgba(251,165,0,.6);}
+.free-btn:hover { box-shadow: 0px 0px 15px rgba(255,225,0,.6);}
+.kefu-btn:hover { box-shadow: 0px 0px 15px rgba(49,49,49,.6);}
 
 
+
+.active-main {
+    padding-bottom: 120px;
+}
 /*二级导航条*/
 .float-nav {
     position: fixed;

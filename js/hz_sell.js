@@ -18,14 +18,14 @@ var sell = {
 //  下一页
     linePos: function(obj){
         var _index = $('.nav-r li').index(obj),
-            _t = sell.getPos($('.sell')[_index]).t-90;
+            _t = sell.getPos($('.sell')[_index]).t-120;
         $('body,html').animate({scrollTop:_t},300);
     },
     
 //    下一页
     getNext: function(obj){
         var _index = $('.to-next').index(obj);
-        $('.nav-r li').eq(_index+1).trigger('click');                           
+        $('.nav-r li').eq(_index+2).trigger('click');                           
     },
     
 //    监听滚动事件
@@ -37,7 +37,7 @@ var sell = {
             pos[i] = sell.getPos($('.sell')[i]).t;
         }
         for(var i=0;i<pos.length;i++){
-            if(scrollTop>=(pos[i]-100)&& scrollTop<=pos[i+1]){
+            if(scrollTop>=(pos[i]-122)&& scrollTop<=pos[i+1]){
                 var _len = $('.nav-r li')[i].offsetWidth,
                     _l = $('.nav-r li')[i].offsetLeft;
                 $('.nav-line').css({
@@ -47,9 +47,9 @@ var sell = {
                     'transform': 'translate3d('+_l+'px,0,0)',
                     'width': _len
                 });    
-            }else if(i == 4&& scrollTop>pos[4]-100){
-                var _len = $('.nav-r li')[4].offsetWidth,
-                    _l = $('.nav-r li')[4].offsetLeft;
+            }else if(i == 7&& scrollTop>pos[7]-122){
+                var _len = $('.nav-r li')[7].offsetWidth,
+                    _l = $('.nav-r li')[7].offsetLeft;
                 $('.nav-line').css({
                     '-webkit-transform': 'translate3d('+_l+'px,0,0)',
                     '-moz-transform': 'translate3d('+_l+'px,0,0)',
@@ -60,14 +60,6 @@ var sell = {
             }
         }
     },
-    
-//    权重展示
-    showWeight: function(obj){
-        var _name = obj.find('.weight-icon').attr('class').substring(12),
-            _txt = obj.find('h4 span').html();
-        $('.weight-change').find('.iconfont').removeClass().addClass(_name);
-        $('.weight-change h4').html(_txt);
-    }
 }
 
 $(function(){
@@ -78,10 +70,6 @@ $(function(){
     $('.to-next').on('click',function(){
         sell.getNext($(this)[0]);
     }); 
-    
-    $('.weight-list').on('mouseenter',function(){
-        sell.showWeight($(this));
-    });
     
     $('.to-top').on('click',function(){
         $('body,html').animate({scrollTop:0},300);

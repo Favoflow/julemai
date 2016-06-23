@@ -1,0 +1,96 @@
+.pub {
+  background: #fff;
+  padding: 0 3% 60px; }
+  .pub h2 {
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 80px;
+    margin-bottom: 40px; }
+  .pub .form-left {
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    line-height: 36px;
+    color: #333; }
+  .pub .form-right {
+    float: left; }
+  .pub .form-tt {
+    padding-top: 6px;
+    font-size: 14px;
+    color: #333;
+    line-height: 24px; }
+  .pub .form-group {
+    padding-bottom: 0;
+    margin-bottom: 30px; }
+  .pub .form-radio, .pub .form-checkbox {
+    float: left;
+    margin-right: 30px; }
+    .pub .form-radio label, .pub .form-checkbox label {
+      line-height: 36px; }
+  .pub .form-select {
+    float: left;
+    width: 150px;
+    line-height: 34px;
+    padding: 0 10px;
+    margin-right: 13px; }
+  .pub .form-control {
+    line-height: 36px;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 6px; }
+  .pub .form-upload {
+    position: relative;
+    padding: 0;
+    border: none; }
+    .pub .form-upload .tips {
+      display: block;
+      font-size: 12px;
+      color: #999;
+      line-height: 34px;
+      padding: 0; }
+  .pub .money-input:after {
+    display: block;
+    clear: both;
+    content: ""; }
+  .pub .money-input {
+    float: left;
+    line-height: 36px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    width: 170px; }
+    .pub .money-input input {
+      float: left;
+      width: 135px;
+      padding: 0 5px;
+      background: #fff; }
+    .pub .money-input span {
+      float: left;
+      width: 32px;
+      background: #f8f8f8;
+      text-align: center;
+      font-size: 12px;
+      border-left: 1px solid #e5e5e5; }
+  .pub .money-tips {
+    float: left;
+    margin-left: 20px;
+    font-size: 12px;
+    color: #999;
+    line-height: 36px; }
+    .pub .money-tips i {
+      margin-right: 6px; }
+  .pub .wait-count {
+    float: left;
+    line-height: 36px;
+    font-size: 14px;
+    color: #bbb; }
+  .pub .form-btn {
+    float: right; }
+    .pub .form-btn button {
+      float: left;
+      border-radius: 4px;
+      width: 180px;
+      margin-right: 20px; }
+
+/*# sourceMappingURL=pub_pro.css.map */

@@ -1,3 +1,7 @@
+.help-block {
+  margin-bottom: 0;
+  margin-top: 0; }
+
 .textOver {
   width: 100%;
   overflow: hidden;
@@ -733,6 +737,11 @@
   border-radius: 4px;
   text-align: center; }
 
+.form-group:after {
+  display: block;
+  clear: both;
+  content: ""; }
+
 .form-group {
   padding-bottom: 20px;
   margin-bottom: 0;
@@ -807,7 +816,8 @@
 .form-select {
   position: relative;
   background: #f8f8f8;
-  border: 1px solid #e5e5e5; }
+  border: 1px solid #e5e5e5;
+  border-radius: 4px; }
   .form-select select {
     width: 100%;
     -webkit-appearance: none;
@@ -827,6 +837,27 @@
     border-width: 4px;
     border-style: solid;
     border-color: #333 transparent transparent transparent; }
+
+.form-radio:after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+.form-radio input, .form-checkbox input {
+  float: left; }
+.form-radio label, .form-checkbox label {
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  padding-left: 10px;
+  line-height: 36px; }
+
+.form-radio input {
+  margin-top: 10px; }
+
+.form-checkbox input {
+  margin-top: 11px; }
 
 .form-textarea {
   resize: none;
@@ -877,53 +908,65 @@
 .icon-yinxingqia {
   color: #ffe100; }
 
-.icon-zhongguoyinxing {
+.icon-01040000 {
   color: #ae1617; }
 
-.icon-jiaotongyinxing {
+.icon-03010000 {
   color: #1b308b; }
 
-.icon-gongshangyinxing {
+.icon-01020000 {
   color: #f0383b; }
 
-.icon-pufa {
+.icon-03100000 {
   color: #0a6cbb; }
 
-.icon-youzheng {
+.icon-01000000 {
   color: #368157; }
 
-.icon-minshengyinxing {
+.icon-03050000 {
   color: #3a9f79; }
 
-.icon-jiansheyinxing {
+.icon-01050000 {
   color: #0155b9; }
 
-.icon-guangfayinxing {
+.icon-03060000 {
   color: #d40417; }
 
-.icon-icon0201fuben30 {
+.icon-04083320 {
   color: #fcc329; }
 
-.icon-zhaoshangyinxing {
+.icon-03080000 {
   color: #e70300; }
 
-.icon-beijingyinxing {
+.icon-04031000 {
   color: #f13233; }
 
-.icon-zhongxinyinxing {
+.icon-03020000 {
   color: #d81b17; }
 
-.icon-guangdayinxing {
+.icon-03030000 {
   color: #e7cf2c; }
 
-.icon-nongyeyinxing {
+.icon-01030000 {
   color: #329d6b; }
 
-.icon-pinganyinxingsolid {
+.icon-03070000 {
   color: #eb6434; }
 
-.icon-xingyeyinxing {
+.icon-03090000 {
   color: #031f9a; }
+
+.icon-weixin {
+  color: #60c52e; }
+
+.icon-weibo {
+  color: #f64f5b; }
+
+.icon-qq {
+  color: #5b9bf2; }
+
+.icon-qzone {
+  color: #ffaf23; }
 
 .alert-bg {
   display: none;
@@ -1002,21 +1045,25 @@
     background: #111;
     color: #fff; }
 
-.level:after {
-  display: block;
-  clear: both;
-  content: ''; }
+.alert-tit {
+  width: 100%;
+  font-size: 16px;
+  color: #000;
+  line-height: 56px;
+  border-bottom: 1px solid #e5e5e5; }
 
 .level {
+  position: relative;
   display: inline-block;
-  font-size: 14px; }
-  .level .iconfont {
-    float: left; }
+  font-size: 14px;
+  padding-right: 4px; }
   .level em {
-    float: left;
-    -webkit-transform: scale(0.6, 0.6);
-    -moz-transform: scale(0.6, 0.6);
-    -ms-transform: scale(0.6, 0.6);
-    transform: scale(0.6, 0.6); }
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scale(0.5, 0.5);
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5); }
 
 /*# sourceMappingURL=common.css.map */

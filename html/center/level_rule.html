@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>聚乐买-个人中心</title>
+    
+<!--css-s-->
+
+<!--bootstrap-s-->
+    <link rel="stylesheet" href="../../plugins/bootstrap/css/bootstrap.min.css">
+<!--bootstrap-e-->
+
+    <link rel="stylesheet" href="../../css/component/reset.css">
+    <link rel="stylesheet" href="../../css/component/common.css">
+    <link rel="stylesheet" href="../../plugins/fonts/iconfont.css">
+    <link rel="stylesheet" href="../../css/component/nav.css">
+    <link rel="stylesheet" href="../../css/component/footer.css">
+    <link rel="stylesheet" href="../../css/center_frame.css">
+    <link rel="stylesheet" href="../../css/collect_list.css">
+    <link rel="stylesheet" href="../../css/level_rule.css">
+<!--css-e-->
+
+<!--js-s-->
+
+    <script src="../../js/component/jquery-1.12.3.min.js"></script>
+<!--bootstrap-s  -->
+    <script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../plugins/bootstrap/js/holder.min.js"></script>
+<!--bootstrap-e  -->
+
+<!--js-e-->
+</head>
+<body>
+<!--header-s    -->
+<header>
+    
+<!--    顶部导航-->
+    <div class="nav-top hidden-xs">
+        <div class="nav-topMain container clearfix">
+            <a class="nav-topLeft" href="#">聚乐买首页</a>
+            <ul class="nav-topRight">
+                <li class="log">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                </li>
+                <li><a href="#"><i class="iconfont icon-kechengliebiao"></i>我的订单</a></li>
+                <li><a href="#"><i class="iconfont icon-shoucangp"></i>我的收藏</a></li>
+                <li><a href="#"><i class="iconfont icon-kefu"></i>联系客服</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<!--    商品导航-->
+   <div class="navbar navbar-static-top navbar-main">
+       <div class="container">
+            <div class="navbar-left">
+                <a class="logo" href="#"><img src="../../images/com/logo.png" alt="logo"></a>
+                <ul class="navleft-list hidden-xs">
+                    <li class="nav-cur"><a href="#">用户中心</a></li>
+                </ul>
+            </div>             
+<!--            平板，电脑-->
+            <div class="navbar-right hidden-xs">
+                <ul class="navright-list clearfix">
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-naozhong"></i>
+                            <span>限时限量抢</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-manbaibaoyou"></i>
+                            <span>全场包邮</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-chanpin"></i>
+                            <span>最低售价</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-shangjia1"></i>
+                            <span>商家报名</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+<!--            手机-->
+            <div class="navbar-right visible-xs">
+                <a href="javascript:;" class="navbar-user-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#user_menu"><img class="img-responsive" data-src="holder.js/auto/40x40"></</a>
+                
+                <a href="javascript:;" class="navbar-menu-btn navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#nav_menu"><i class="iconfont icon-kechengliebiao"></i></a>   
+                
+                 <div id="nav_menu" class="collapse navbar-collapse" aria-expanded="false">
+                     <ul class="nav navbar-nav">
+                         <li><a href="#">首页</a></li>
+                         <li><a href="#">最后疯抢</a></li>
+                         <li><a href="#">全场包邮</a></li>
+                         <li><a href="#">最低售价</a></li>
+                         <li><a href="#">商家报名</a></li>
+                     </ul>
+                 </div> 
+                 
+                 <div id="user_menu" class="collapse navbar-collapse" aria-expanded="false">
+                     <ul class="nav navbar-nav">
+                         <li><a href="#">登录</a></li>
+                         <li><a href="#">注册</a></li>
+                         <li><a href="#">我的订单</a></li>
+                         <li><a href="#">我的收藏</a></li>
+                         <li><a href="#">联系客服</a></li>
+                     </ul>
+                 </div>
+            </div>
+       </div>
+   </div>
+</header>
+<!--header-e    -->
+
+
+<!--个人中心-s-->
+        
+<div class="container level_rule">
+    <div class="level-top clearfix">
+        <div class="level-user col-md-2">
+            <img src="../../images/com/default_ava.png">
+            <h4 class="textOver">hi,噼里啪啦巴拉拉...</h4>
+        </div>
+        <div class="level-main col-md-10">
+            <dl class="clearfix">
+                <dd>我当前的等级是：</span>
+                <dd class="level-no"><span class="level"><i class="iconfont icon-v"></i><em>2</em></span>会员</dd>
+                <dd>已完成结算订单<i>120</i>笔，再完成<i>80</i>笔即可升级到</dd>
+                <dd class="level-no"><span class="level"><i class="iconfont icon-v"></i><em>2</em></span></dd>
+            </dl>
+
+            <div class="level-bar">
+                <p class="level-per"><span class="percent" style="width:22%"></span></p>
+                <ul>
+                    <li class="pass-level"><span class="level"><i class="iconfont icon-v"></i><em>0</em></span></li>
+                    <li class="pass-level"><span class="level"><i class="iconfont icon-v"></i><em>1</em></span></li>
+                    <li class="pass-level now-level"><span class="level"><i class="iconfont icon-v"></i><em>2</em></span></li>
+                    <li><span class="level"><i class="iconfont icon-v"></i><em>3</em></span></li>
+                    <li><span class="level"><i class="iconfont icon-v"></i><em>4</em></span></li>
+                    <li><span class="level"><i class="iconfont icon-v"></i><em>5</em></span></li>
+                    <li><span class="level"><i class="iconfont icon-v"></i><em>6</em></span></li>
+                    <li><span class="level"><i class="iconfont icon-v"></i><em>7</em></span></li>
+                    <li><span class="level"><i class="iconfont icon-v"></i><em>8</em></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rule-main">
+        <h3>等级规则</h3>
+        <ul>
+            <li><span>•</span>完成订单：买家在平台下单完成返现交易的订单数量。</li>
+            <li><span>•</span>结算时间：平台自动结算返现金额给买家的时间，如遇商家自行结算，时间将有可能缩短。</li>
+            <li><span>•</span>提现时间：买家向平台申请提现的时间，只计算工作日，节假日不含在内，首次提现需要客服审核。</li>
+        </ul>
+        <div class="rule-pic"><img class="img-responsive" src="../../images/level_rule.png"></div>
+    </div>
+</div>
+
+<!--footer-s-->
+<footer class="footer">
+    <div class="container clearfix">
+        <div class="hidden-xs footer-top row">
+            <ul class="footer-list col-md-9 col-xs-9">
+                <li> 
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="javascript:;">公司简介</a></dd>
+                        <dd><a href="javascript:;">联系我们</a></dd>
+                    </dl>
+                </li>
+                <li> 
+                    <dl>
+                        <dt>关注我们</dt>
+                        <dd><a href="javascript:;">官方微信</a></dd>
+                        <dd><a href="javascript:;">新浪微博</a></dd>
+                    </dl>
+                </li>
+                <li> 
+                    <dl>
+                        <dt>帮助中心</dt>
+                        <dd><a href="javascript:;">新手指导</a></dd>
+                        <dd><a href="javascript:;">常见问题</a></dd>
+                    </dl>
+                </li>
+                <li> 
+                    <dl>
+                        <dt>合作伙伴</dt>
+                        <dd><a href="javascript:;">汇折网</a></dd>
+                    </dl>
+                </li>
+                <li> 
+                    <dl>
+                        <dt>商家入驻</dt>
+                        <dd><a href="javascript:;">商家报名</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            
+            <div class="footer-info col-md-3 col-xs-3">
+                <span class="footer-tel">0576-82370386</span>
+                <span class="footer-time">周一至周日 8：30-17：30</span>
+                <a class="footer-kefu" href="javascript:;"><i class="iconfont icon-kefu"></i>联系在线客服</a>
+            </div>
+            
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright@2015-2017  台州聚乐买有限公司 版权所有，并保留所有权益</p>
+            <p>icp备案证书号：浙icp备13032529号-2</p>
+        </div>
+    </div>
+</footer>
+<!--footer-e-->
+</body>
+</html>

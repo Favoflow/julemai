@@ -102,4 +102,31 @@
       -ms-border-radius: 4px;
       border-radius: 4px; }
 
+.fix-order-alert li:after {
+  display: block;
+  clear: both;
+  content: ""; }
+.fix-order-alert li {
+  line-height: 34px; }
+  .fix-order-alert li span {
+    float: left; }
+.fix-order-alert li label {
+  float: left;
+  width: 65px;
+  font-weight: 400; }
+.fix-order-alert .form-control {
+  float: left;
+  width: auto;
+  height: 34px;
+  line-height: 34px; }
+
+.write-order-alert .form-control {
+  height: 34px;
+  line-height: 34px;
+  margin: 20px 0 10px; }
+.write-order-alert .tips {
+  margin-bottom: 10px; }
+.write-order-alert .img-area img {
+  width: 400px; }
+
 /*# sourceMappingURL=center_order.css.map */
